@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "anvilcraft_delight:pear",
+    "anvilcraft_delight:pear_jam",
+    "minecraft:apple",
+    "anvilcraft_delight:apple_jam",
+    "anvilcraft_delight:banana",
+    "anvilcraft_delight:blueberry",
+    "anvilcraft_delight:strawberry",
+    "anvilcraft_delight:peach",
+    "anvilcraft_delight:carambola",
+    "anvilcraft_delight:cherry",
+    "anvilcraft_delight:coconut",
+    "anvilcraft_delight:grape"
+  ]
+}

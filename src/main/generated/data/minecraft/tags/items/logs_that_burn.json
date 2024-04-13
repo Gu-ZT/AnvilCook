@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "anvilcraft_delight:pear_log",
+    "anvilcraft_delight:pear_wood",
+    "anvilcraft_delight:lemon_log",
+    "anvilcraft_delight:lemon_wood",
+    "anvilcraft_delight:walnut_log",
+    "anvilcraft_delight:walnut_wood",
+    "anvilcraft_delight:banana_log",
+    "anvilcraft_delight:banana_wood",
+    "anvilcraft_delight:peach_log",
+    "anvilcraft_delight:peach_wood",
+    "anvilcraft_delight:coconut_log",
+    "anvilcraft_delight:coconut_wood",
+    "anvilcraft_delight:carambola_log",
+    "anvilcraft_delight:carambola_wood",
+    "anvilcraft_delight:toon_log",
+    "anvilcraft_delight:toon_wood"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "anvilcraft_delight",
+  "version": "0.0.2",
+  "name": "AnvilCraft_Delight",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/乖乖小徐卖个萌/AnvilCraft_Delight"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/anvilcraft_delight/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "lobster.moe.anvilcraft_delight.client.AnvilCraft_DelightClient"
+    ],
+    "main": [
+      "lobster.moe.anvilcraft_delight.AnvilCraft_Delight"
+    ],
+    "fabric-datagen": [
+      "lobster.moe.anvilcraft_delight.AnvilCraft_DelightDataGenerator"
+    ]
+  },
+  "mixins": [
+    "anvilcraft_delight.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.7",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}
