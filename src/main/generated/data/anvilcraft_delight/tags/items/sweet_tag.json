@@ -1,17 +1,29 @@
 {
   "replace": false,
   "values": [
+    "minecraft:honey_bottle",
+    "minecraft:pumpkin_pie",
+    "minecraft:glow_berries",
+    "minecraft:sweet_berries",
+    "minecraft:melon_slice",
     "anvilcraft_delight:pear",
     "anvilcraft_delight:pear_jam",
     "minecraft:apple",
     "anvilcraft_delight:apple_jam",
     "anvilcraft_delight:banana",
     "anvilcraft_delight:blueberry",
+    "anvilcraft_delight:blueberry_jam",
     "anvilcraft_delight:strawberry",
+    "anvilcraft_delight:strawberry_jam",
     "anvilcraft_delight:peach",
+    "anvilcraft_delight:peach_jam",
     "anvilcraft_delight:carambola",
     "anvilcraft_delight:cherry",
+    "anvilcraft_delight:carambola_jam",
     "anvilcraft_delight:coconut",
-    "anvilcraft_delight:grape"
+    "anvilcraft_delight:grape",
+    "anvilcraft_delight:grape_jam",
+    "anvilcraft_delight:tomato",
+    "anvilcraft_delight:tomato_jam"
   ]
 }

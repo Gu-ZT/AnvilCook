@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "minecraft:glow_berries",
+    "minecraft:sweet_berries",
+    "minecraft:melon_slice",
     "minecraft:apple",
     "anvilcraft_delight:pear",
     "anvilcraft_delight:banana",

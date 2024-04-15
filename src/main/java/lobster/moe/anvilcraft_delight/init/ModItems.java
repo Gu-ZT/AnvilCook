@@ -1,12 +1,10 @@
 package lobster.moe.anvilcraft_delight.init;
 
-import dev.architectury.platform.Mod;
 import lobster.moe.anvilcraft_delight.AnvilCraft_Delight;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.NotNull;
 

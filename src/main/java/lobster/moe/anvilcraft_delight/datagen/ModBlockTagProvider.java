@@ -4,7 +4,6 @@ import lobster.moe.anvilcraft_delight.init.ModBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.tags.BlockTags;
 
 import java.util.concurrent.CompletableFuture;

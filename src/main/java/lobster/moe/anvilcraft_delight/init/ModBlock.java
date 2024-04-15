@@ -1,15 +1,12 @@
 package lobster.moe.anvilcraft_delight.init;
 
-import com.mojang.logging.LogUtils;
 import lobster.moe.anvilcraft_delight.AnvilCraft_Delight;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
-import net.minecraft.world.level.levelgen.feature.TreeFeature;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;

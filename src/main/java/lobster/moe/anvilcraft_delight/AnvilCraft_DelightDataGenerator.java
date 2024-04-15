@@ -7,7 +7,6 @@ import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
-import org.apache.http.config.RegistryBuilder;
 
 public class AnvilCraft_DelightDataGenerator implements DataGeneratorEntrypoint {
 
@@ -17,7 +16,6 @@ public class AnvilCraft_DelightDataGenerator implements DataGeneratorEntrypoint 
         pack.addProvider(ModModelsProvider::new);
         pack.addProvider(ModBlockTagProvider::new);
         pack.addProvider(ModItemTagProvider::new);
-//        pack.addProvider(ModFoodTagProvider::new);
         pack.addProvider(ModGenerator::new);
 
     }

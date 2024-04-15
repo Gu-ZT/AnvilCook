@@ -1,11 +1,12 @@
-// 1.20.1	2024-04-13T21:19:03.3622518	AnvilCraft_Delight/Tags for minecraft:item
-4d4bd6414fda1aaaca1a5d7062a2e334ef524c0e data\anvilcraft_delight\tags\items\satiety_tag.json
-87516854fafba54f93dad48bf7974c4e935fc86d data\anvilcraft_delight\tags\items\meat_tag.json
+// 1.20.1	2024-04-15T18:09:00.3233794	AnvilCraft_Delight/Tags for minecraft:item
+b765fe84c93ad4af4fce892778d2782c71c8d710 data\anvilcraft_delight\tags\items\satiety_tag.json
+f037cf74b3ae2bbc282b12f92acdd927c3d78a98 data\anvilcraft_delight\tags\items\meat_tag.json
 42952aa602cdbbb414b81f2f4e45997a94510126 data\anvilcraft_delight\tags\items\unbelievable_tag.json
 ffc6e9c8df27511bca3e75e04f790d035bfb200e data\anvilcraft_delight\tags\items\nut_tag.json
 79fddf177916b31f2dfb7d3471eae5c10da98f7b data\anvilcraft_delight\tags\items\luxurious_tag.json
 7007567b6cd1de9c50db0e5d1d6f31bacfd69c6c data\minecraft\tags\items\logs_that_burn.json
-e091b1ea735d5e6e889ef170f9cd83a9f4ff0247 data\anvilcraft_delight\tags\items\sweet_tag.json
-c1e6515ac6ca16ca5adc34e28e947aa58ebab7d4 data\anvilcraft_delight\tags\items\fruit_tag.json
-e769324d5f3b41691c833fb01b798204008a0c86 data\anvilcraft_delight\tags\items\acid_tag.json
+9d0340d1db9191f5a6cf981b7f689b24f15a3e73 data\anvilcraft_delight\tags\items\sweet_tag.json
+1404a1f7447280ae9d0cc7bd501d0a406db3ee84 data\anvilcraft_delight\tags\items\fruit_tag.json
+4ac99aa35f677f252263ee6065d7d28af5da221a data\anvilcraft_delight\tags\items\acid_tag.json
+55c7fc5e23b403f9c842ae1dc40376b09ab3b32e data\anvilcraft_delight\tags\items\hot_tag.json
 9aff8f599951cc0c0cb8b26ba553028f491b7611 data\anvilcraft_delight\tags\items\seafood_tag.json
