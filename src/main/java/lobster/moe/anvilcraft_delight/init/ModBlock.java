@@ -4,11 +4,11 @@ import com.mojang.logging.LogUtils;
 import lobster.moe.anvilcraft_delight.AnvilCraft_Delight;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.LeavesBlock;
-import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.levelgen.feature.TreeFeature;
 import org.jetbrains.annotations.NotNull;
 
@@ -17,11 +17,19 @@ import java.util.Map;
 import java.util.function.Function;
 
 public class ModBlock {
-
     private static final Map<String,Block> BLOCK_MAP = new HashMap<>();
     public static final Block PEARLOG = registerBlock("pear_log", RotatedPillarBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_LOG));
     public static final Block PEARWOOD = registerBlock("pear_wood", RotatedPillarBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_WOOD));
     public static final Block PEARPLANKS = registerBlock("pear_planks", Block::new,BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block PEARSTAIRS = registerBlock("pear_stairs",(properties) -> new StairBlock(ModBlock.PEARPLANKS.defaultBlockState(),properties),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block PEARSLAB = registerBlock("pear_slab",SlabBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block PEARBUTTON = registerBlock("pear_button",(properties) -> new ButtonBlock(properties, BlockSetType.OAK,20,true),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block PEARPRESSUERPLATE = registerBlock("pear_pressure_plate",(properties) -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,properties,BlockSetType.OAK),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block PEARFENCE = registerBlock("pear_fence",FenceBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block PEARFENCEGATE = registerBlock("pear_fence_gate",(properties) -> new FenceGateBlock(properties, WoodType.OAK),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block PEARWALL = registerBlock("pear_wall",WallBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block PEARDOOR = registerBlock("pear_door",(properties) -> new DoorBlock(properties.noOcclusion(),BlockSetType.OAK),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block PEARTRAPDOOR = registerBlock("pear_trapdoor",(properties) -> new TrapDoorBlock(properties.noOcclusion(),BlockSetType.OAK),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
 
     public static final Block LEMONLOG = registerBlock("lemon_log",RotatedPillarBlock::new,BlockBehaviour.Properties.copy(Blocks.BIRCH_LOG));
     public static final Block LEMONWOOD = registerBlock("lemon_wood",RotatedPillarBlock::new,BlockBehaviour.Properties.copy(Blocks.BIRCH_WOOD));
