@@ -85,39 +85,111 @@ public class ModItemGroup {
                 entries.accept(ModCereals.SORGHUM.getDefaultInstance());
             });
     public static final CreativeModeTab.Builder ANVILCRAFTDELIGHT_BLOCKS = createItemGroup("blocks",FabricItemGroup::builder)
-            .icon(()->new ItemStack(ModBlock.PEARLEAVES))
+            .icon(()->new ItemStack(ModBlock.PEARLOG))
             .displayItems((ctx,entries)->{
                 entries.accept(ModItems.PEARLOG.getDefaultInstance());
                 entries.accept(ModItems.PEARWOOD.getDefaultInstance());
                 entries.accept(ModItems.PEARPLANKS.getDefaultInstance());
+                entries.accept(ModItems.PEARSTAIRS.getDefaultInstance());
+                entries.accept(ModItems.PEARSLAB.getDefaultInstance());
+                entries.accept(ModItems.PEARBUTTON.getDefaultInstance());
+                entries.accept(ModItems.PEARPRESSUERPLATE.getDefaultInstance());
+                entries.accept(ModItems.PEARFENCE.getDefaultInstance());
+                entries.accept(ModItems.PEARFENCEGATE.getDefaultInstance());
+                entries.accept(ModItems.PEARWALL.getDefaultInstance());
+                entries.accept(ModItems.PEARDOOR.getDefaultInstance());
+                entries.accept(ModItems.PEARTRAPDOOR.getDefaultInstance());
 
                 entries.accept(ModItems.LEMONLOG.getDefaultInstance());
                 entries.accept(ModItems.LEMONWOOD.getDefaultInstance());
                 entries.accept(ModItems.LEMONPLANKS.getDefaultInstance());
+                entries.accept(ModItems.LEMONSTAIRS.getDefaultInstance());
+                entries.accept(ModItems.LEMONSLAB.getDefaultInstance());
+                entries.accept(ModItems.LEMONBUTTON.getDefaultInstance());
+                entries.accept(ModItems.LEMONPRESSUERPLATE.getDefaultInstance());
+                entries.accept(ModItems.LEMONFENCE.getDefaultInstance());
+                entries.accept(ModItems.LEMONFENCEGATE.getDefaultInstance());
+                entries.accept(ModItems.LEMONWALL.getDefaultInstance());
+                entries.accept(ModItems.LEMONDOOR.getDefaultInstance());
+                entries.accept(ModItems.LEMONTRAPDOOR.getDefaultInstance());
 
                 entries.accept(ModItems.WALNUTLOG.getDefaultInstance());
                 entries.accept(ModItems.WALNUTWOOD.getDefaultInstance());
                 entries.accept(ModItems.WALNUTPLANKS.getDefaultInstance());
+                entries.accept(ModItems.WALNUTSTAIRS.getDefaultInstance());
+                entries.accept(ModItems.WALNUTSLAB.getDefaultInstance());
+                entries.accept(ModItems.WALNUTBUTTON.getDefaultInstance());
+                entries.accept(ModItems.WALNUTPRESSUERPLATE.getDefaultInstance());
+                entries.accept(ModItems.WALNUTFENCE.getDefaultInstance());
+                entries.accept(ModItems.WALNUTFENCEGATE.getDefaultInstance());
+                entries.accept(ModItems.WALNUTWALL.getDefaultInstance());
+                entries.accept(ModItems.WALNUTDOOR.getDefaultInstance());
+                entries.accept(ModItems.WALNUTTRAPDOOR.getDefaultInstance());
 
                 entries.accept(ModItems.BANANALOG.getDefaultInstance());
                 entries.accept(ModItems.BANANAWOOD.getDefaultInstance());
                 entries.accept(ModItems.BANANAPLANKS.getDefaultInstance());
+                entries.accept(ModItems.BANANASTAIRS.getDefaultInstance());
+                entries.accept(ModItems.BANANASLAB.getDefaultInstance());
+                entries.accept(ModItems.BANANABUTTON.getDefaultInstance());
+                entries.accept(ModItems.BANANAPRESSUERPLATE.getDefaultInstance());
+                entries.accept(ModItems.BANANAFENCE.getDefaultInstance());
+                entries.accept(ModItems.BANANAFENCEGATE.getDefaultInstance());
+                entries.accept(ModItems.BANANAWALL.getDefaultInstance());
+                entries.accept(ModItems.BANANADOOR.getDefaultInstance());
+                entries.accept(ModItems.BANANATRAPDOOR.getDefaultInstance());
 
                 entries.accept(ModItems.PEACHLOG.getDefaultInstance());
                 entries.accept(ModItems.PEACHWOOD.getDefaultInstance());
                 entries.accept(ModItems.PEACHPLANKS.getDefaultInstance());
+                entries.accept(ModItems.PEACHSTAIRS.getDefaultInstance());
+                entries.accept(ModItems.PEACHSLAB.getDefaultInstance());
+                entries.accept(ModItems.PEACHBUTTON.getDefaultInstance());
+                entries.accept(ModItems.PEACHPRESSUERPLATE.getDefaultInstance());
+                entries.accept(ModItems.PEACHFENCE.getDefaultInstance());
+                entries.accept(ModItems.PEACHFENCEGATE.getDefaultInstance());
+                entries.accept(ModItems.PEACHWALL.getDefaultInstance());
+                entries.accept(ModItems.PEACHDOOR.getDefaultInstance());
+                entries.accept(ModItems.PEACHTRAPDOOR.getDefaultInstance());
 
                 entries.accept(ModItems.COCONUTLOG.getDefaultInstance());
                 entries.accept(ModItems.COCONUTWOOD.getDefaultInstance());
                 entries.accept(ModItems.COCONUTPLANKS.getDefaultInstance());
+                entries.accept(ModItems.COCONUTSTAIRS.getDefaultInstance());
+                entries.accept(ModItems.COCONUTSLAB.getDefaultInstance());
+                entries.accept(ModItems.COCONUTBUTTON.getDefaultInstance());
+                entries.accept(ModItems.COCONUTPRESSUERPLATE.getDefaultInstance());
+                entries.accept(ModItems.COCONUTFENCE.getDefaultInstance());
+                entries.accept(ModItems.COCONUTFENCEGATE.getDefaultInstance());
+                entries.accept(ModItems.COCONUTWALL.getDefaultInstance());
+                entries.accept(ModItems.COCONUTDOOR.getDefaultInstance());
+                entries.accept(ModItems.COCONUTTRAPDOOR.getDefaultInstance());
 
                 entries.accept(ModItems.CARAMBOLALOG.getDefaultInstance());
                 entries.accept(ModItems.CARAMBOLAWOOD.getDefaultInstance());
                 entries.accept(ModItems.CARAMBOLAPLANKS.getDefaultInstance());
+                entries.accept(ModItems.CARAMBOLASTAIRS.getDefaultInstance());
+                entries.accept(ModItems.CARAMBOLASLAB.getDefaultInstance());
+                entries.accept(ModItems.CARAMBOLABUTTON.getDefaultInstance());
+                entries.accept(ModItems.CARAMBOLAPRESSUERPLATE.getDefaultInstance());
+                entries.accept(ModItems.CARAMBOLAFENCE.getDefaultInstance());
+                entries.accept(ModItems.CARAMBOLAFENCEGATE.getDefaultInstance());
+                entries.accept(ModItems.CARAMBOLAWALL.getDefaultInstance());
+                entries.accept(ModItems.CARAMBOLADOOR.getDefaultInstance());
+                entries.accept(ModItems.CARAMBOLATRAPDOOR.getDefaultInstance());
 
                 entries.accept(ModItems.TOONLOG.getDefaultInstance());
                 entries.accept(ModItems.TOONWOOD.getDefaultInstance());
                 entries.accept(ModItems.TOONPLANKS.getDefaultInstance());
+                entries.accept(ModItems.TOONSTAIRS.getDefaultInstance());
+                entries.accept(ModItems.TOONSLAB.getDefaultInstance());
+                entries.accept(ModItems.TOONBUTTON.getDefaultInstance());
+                entries.accept(ModItems.TOONPRESSUERPLATE.getDefaultInstance());
+                entries.accept(ModItems.TOONFENCE.getDefaultInstance());
+                entries.accept(ModItems.TOONFENCEGATE.getDefaultInstance());
+                entries.accept(ModItems.TOONWALL.getDefaultInstance());
+                entries.accept(ModItems.TOONDOOR.getDefaultInstance());
+                entries.accept(ModItems.TOONTRAPDOOR.getDefaultInstance());
 
                 entries.accept(ModItems.PEARLEAVES.getDefaultInstance());
                 entries.accept(ModItems.LEMONLEAVES.getDefaultInstance());
@@ -127,6 +199,7 @@ public class ModItemGroup {
                 entries.accept(ModItems.COCONUTLEAVES.getDefaultInstance());
                 entries.accept(ModItems.CARAMBOLALEAVES.getDefaultInstance());
                 entries.accept(ModItems.TOONLEAVES.getDefaultInstance());
+
 
                 entries.accept(ModItems.PEARSAPLING.getDefaultInstance());
                 entries.accept(ModItems.LEMONSAPLING.getDefaultInstance());

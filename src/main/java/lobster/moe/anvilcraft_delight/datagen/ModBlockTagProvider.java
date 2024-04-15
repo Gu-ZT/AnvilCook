@@ -32,7 +32,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlock.CARAMBOLAWOOD)
                 .add(ModBlock.TOONLOG)
                 .add(ModBlock.TOONWOOD);
-
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlock.PEARFENCE)
+                .add(ModBlock.LEMONFENCE)
+                .add(ModBlock.WALNUTFENCE)
+                .add(ModBlock.BANANAFENCE)
+                .add(ModBlock.PEACHFENCE)
+                .add(ModBlock.COCONUTFENCE)
+                .add(ModBlock.CARAMBOLAFENCE)
+                .add(ModBlock.TOONFENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlock.PEARFENCEGATE)
+                .add(ModBlock.LEMONFENCEGATE)
+                .add(ModBlock.WALNUTFENCEGATE)
+                .add(ModBlock.BANANAFENCEGATE)
+                .add(ModBlock.PEACHFENCEGATE)
+                .add(ModBlock.COCONUTFENCEGATE)
+                .add(ModBlock.CARAMBOLAFENCEGATE)
+                .add(ModBlock.TOONFENCEGATE);
 
     }
 }
