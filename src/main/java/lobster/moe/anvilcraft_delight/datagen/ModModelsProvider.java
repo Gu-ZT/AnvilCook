@@ -114,14 +114,6 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.woodProvider(ModBlock.CARAMBOLALOG).log(ModBlock.CARAMBOLALOG).wood(ModBlock.CARAMBOLAWOOD);
         blockStateModelGenerator.woodProvider(ModBlock.TOONLOG).log(ModBlock.TOONLOG).wood(ModBlock.TOONWOOD);
 
-//        blockStateModelGenerator.createTrivialCube(ModBlock.PEARPLANKS);
-//        blockStateModelGenerator.createTrivialCube(ModBlock.LEMONPLANKS);
-//        blockStateModelGenerator.createTrivialCube(ModBlock.WALNUTPLANKS);
-//        blockStateModelGenerator.createTrivialCube(ModBlock.BANANAPLANKS);
-//        blockStateModelGenerator.createTrivialCube(ModBlock.PEACHPLANKS);
-//        blockStateModelGenerator.createTrivialCube(ModBlock.COCONUTPLANKS);
-//        blockStateModelGenerator.createTrivialCube(ModBlock.CARAMBOLAPLANKS);
-//        blockStateModelGenerator.createTrivialCube(ModBlock.TOONPLANKS);
 
         blockStateModelGenerator.createTrivialCube(ModBlock.PEARLEAVES);
         blockStateModelGenerator.createTrivialCube(ModBlock.LEMONLEAVES);
