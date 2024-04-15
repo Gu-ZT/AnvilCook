@@ -26,7 +26,6 @@ public class ModItems {
     public static final Item PEARPRESSUERPLATE = registerBlock(ModBlock.PEARPRESSUERPLATE,BlockItem::new,defaultProperties());
     public static final Item PEARFENCE = registerBlock(ModBlock.PEARFENCE,BlockItem::new,defaultProperties());
     public static final Item PEARFENCEGATE = registerBlock(ModBlock.PEARFENCEGATE,BlockItem::new,defaultProperties());
-    public static final Item PEARWALL = registerBlock(ModBlock.PEARWALL,BlockItem::new,defaultProperties());
     public static final Item PEARDOOR = registerBlock(ModBlock.PEARDOOR,BlockItem::new,defaultProperties());
     public static final Item PEARTRAPDOOR = registerBlock(ModBlock.PEARTRAPDOOR,BlockItem::new,defaultProperties());
 
@@ -41,7 +40,6 @@ public class ModItems {
     public static final Item LEMONPRESSUERPLATE = registerBlock(ModBlock.LEMONPRESSUERPLATE,BlockItem::new,defaultProperties());
     public static final Item LEMONFENCE = registerBlock(ModBlock.LEMONFENCE,BlockItem::new,defaultProperties());
     public static final Item LEMONFENCEGATE = registerBlock(ModBlock.LEMONFENCEGATE,BlockItem::new,defaultProperties());
-    public static final Item LEMONWALL = registerBlock(ModBlock.LEMONWALL,BlockItem::new,defaultProperties());
     public static final Item LEMONDOOR = registerBlock(ModBlock.LEMONDOOR,BlockItem::new,defaultProperties());
     public static final Item LEMONTRAPDOOR = registerBlock(ModBlock.LEMONTRAPDOOR,BlockItem::new,defaultProperties());
 
@@ -57,7 +55,6 @@ public class ModItems {
     public static final Item WALNUTPRESSUERPLATE = registerBlock(ModBlock.WALNUTPRESSUERPLATE,BlockItem::new,defaultProperties());
     public static final Item WALNUTFENCE = registerBlock(ModBlock.WALNUTFENCE,BlockItem::new,defaultProperties());
     public static final Item WALNUTFENCEGATE = registerBlock(ModBlock.WALNUTFENCEGATE,BlockItem::new,defaultProperties());
-    public static final Item WALNUTWALL = registerBlock(ModBlock.WALNUTWALL,BlockItem::new,defaultProperties());
     public static final Item WALNUTDOOR = registerBlock(ModBlock.WALNUTDOOR,BlockItem::new,defaultProperties());
     public static final Item WALNUTTRAPDOOR = registerBlock(ModBlock.WALNUTTRAPDOOR,BlockItem::new,defaultProperties());
 
@@ -73,7 +70,6 @@ public class ModItems {
     public static final Item BANANAPRESSUERPLATE = registerBlock(ModBlock.BANANAPRESSUERPLATE,BlockItem::new,defaultProperties());
     public static final Item BANANAFENCE = registerBlock(ModBlock.BANANAFENCE,BlockItem::new,defaultProperties());
     public static final Item BANANAFENCEGATE = registerBlock(ModBlock.BANANAFENCEGATE,BlockItem::new,defaultProperties());
-    public static final Item BANANAWALL = registerBlock(ModBlock.BANANAWALL,BlockItem::new,defaultProperties());
     public static final Item BANANADOOR = registerBlock(ModBlock.BANANADOOR,BlockItem::new,defaultProperties());
     public static final Item BANANATRAPDOOR = registerBlock(ModBlock.BANANATRAPDOOR,BlockItem::new,defaultProperties());
 
@@ -89,7 +85,6 @@ public class ModItems {
     public static final Item PEACHPRESSUERPLATE = registerBlock(ModBlock.PEACHPRESSUERPLATE,BlockItem::new,defaultProperties());
     public static final Item PEACHFENCE = registerBlock(ModBlock.PEACHFENCE,BlockItem::new,defaultProperties());
     public static final Item PEACHFENCEGATE = registerBlock(ModBlock.PEACHFENCEGATE,BlockItem::new,defaultProperties());
-    public static final Item PEACHWALL = registerBlock(ModBlock.PEACHWALL,BlockItem::new,defaultProperties());
     public static final Item PEACHDOOR = registerBlock(ModBlock.PEACHDOOR,BlockItem::new,defaultProperties());
     public static final Item PEACHTRAPDOOR = registerBlock(ModBlock.PEACHTRAPDOOR,BlockItem::new,defaultProperties());
 
@@ -105,7 +100,6 @@ public class ModItems {
     public static final Item COCONUTPRESSUERPLATE = registerBlock(ModBlock.COCONUTPRESSUERPLATE,BlockItem::new,defaultProperties());
     public static final Item COCONUTFENCE = registerBlock(ModBlock.COCONUTFENCE,BlockItem::new,defaultProperties());
     public static final Item COCONUTFENCEGATE = registerBlock(ModBlock.COCONUTFENCEGATE,BlockItem::new,defaultProperties());
-    public static final Item COCONUTWALL = registerBlock(ModBlock.COCONUTWALL,BlockItem::new,defaultProperties());
     public static final Item COCONUTDOOR = registerBlock(ModBlock.COCONUTDOOR,BlockItem::new,defaultProperties());
     public static final Item COCONUTTRAPDOOR = registerBlock(ModBlock.COCONUTTRAPDOOR,BlockItem::new,defaultProperties());
 
@@ -121,7 +115,6 @@ public class ModItems {
     public static final Item CARAMBOLAPRESSUERPLATE = registerBlock(ModBlock.CARAMBOLAPRESSUERPLATE,BlockItem::new,defaultProperties());
     public static final Item CARAMBOLAFENCE = registerBlock(ModBlock.CARAMBOLAFENCE,BlockItem::new,defaultProperties());
     public static final Item CARAMBOLAFENCEGATE = registerBlock(ModBlock.CARAMBOLAFENCEGATE,BlockItem::new,defaultProperties());
-    public static final Item CARAMBOLAWALL = registerBlock(ModBlock.CARAMBOLAWALL,BlockItem::new,defaultProperties());
     public static final Item CARAMBOLADOOR = registerBlock(ModBlock.CARAMBOLADOOR,BlockItem::new,defaultProperties());
     public static final Item CARAMBOLATRAPDOOR = registerBlock(ModBlock.CARAMBOLATRAPDOOR,BlockItem::new,defaultProperties());
 
@@ -137,7 +130,6 @@ public class ModItems {
     public static final Item TOONPRESSUERPLATE = registerBlock(ModBlock.TOONPRESSUERPLATE,BlockItem::new,defaultProperties());
     public static final Item TOONFENCE = registerBlock(ModBlock.TOONFENCE,BlockItem::new,defaultProperties());
     public static final Item TOONFENCEGATE = registerBlock(ModBlock.TOONFENCEGATE,BlockItem::new,defaultProperties());
-    public static final Item TOONWALL = registerBlock(ModBlock.TOONWALL,BlockItem::new,defaultProperties());
     public static final Item TOONDOOR = registerBlock(ModBlock.TOONDOOR,BlockItem::new,defaultProperties());
     public static final Item TOONTRAPDOOR = registerBlock(ModBlock.TOONTRAPDOOR,BlockItem::new,defaultProperties());
 

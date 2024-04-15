@@ -29,7 +29,6 @@ public class ModModelsProvider extends FabricModelProvider {
         PEARFAMILY.pressurePlate(ModBlock.PEARPRESSUERPLATE);
         PEARFAMILY.fence(ModBlock.PEARFENCE);
         PEARFAMILY.fenceGate(ModBlock.PEARFENCEGATE);
-        PEARFAMILY.wall(ModBlock.PEARWALL);
         blockStateModelGenerator.createDoor(ModBlock.PEARDOOR);
         blockStateModelGenerator.createTrapdoor(ModBlock.PEARTRAPDOOR);
 
@@ -39,7 +38,6 @@ public class ModModelsProvider extends FabricModelProvider {
         LEMONFAMILY.pressurePlate(ModBlock.LEMONPRESSUERPLATE);
         LEMONFAMILY.fence(ModBlock.LEMONFENCE);
         LEMONFAMILY.fenceGate(ModBlock.LEMONFENCEGATE);
-        LEMONFAMILY.wall(ModBlock.LEMONWALL);
         blockStateModelGenerator.createDoor(ModBlock.LEMONDOOR);
         blockStateModelGenerator.createTrapdoor(ModBlock.LEMONTRAPDOOR);
 
@@ -49,7 +47,6 @@ public class ModModelsProvider extends FabricModelProvider {
         WALNUTFAMILY.pressurePlate(ModBlock.WALNUTPRESSUERPLATE);
         WALNUTFAMILY.fence(ModBlock.WALNUTFENCE);
         WALNUTFAMILY.fenceGate(ModBlock.WALNUTFENCEGATE);
-        WALNUTFAMILY.wall(ModBlock.WALNUTWALL);
         blockStateModelGenerator.createDoor(ModBlock.WALNUTDOOR);
         blockStateModelGenerator.createTrapdoor(ModBlock.WALNUTTRAPDOOR);
 
@@ -59,7 +56,6 @@ public class ModModelsProvider extends FabricModelProvider {
         BANANAFAMILY.pressurePlate(ModBlock.BANANAPRESSUERPLATE);
         BANANAFAMILY.fence(ModBlock.BANANAFENCE);
         BANANAFAMILY.fenceGate(ModBlock.BANANAFENCEGATE);
-        BANANAFAMILY.wall(ModBlock.BANANAWALL);
         blockStateModelGenerator.createDoor(ModBlock.BANANADOOR);
         blockStateModelGenerator.createTrapdoor(ModBlock.BANANATRAPDOOR);
 
@@ -69,7 +65,6 @@ public class ModModelsProvider extends FabricModelProvider {
         PEACHFAMILY.pressurePlate(ModBlock.PEACHPRESSUERPLATE);
         PEACHFAMILY.fence(ModBlock.PEACHFENCE);
         PEACHFAMILY.fenceGate(ModBlock.PEACHFENCEGATE);
-        PEACHFAMILY.wall(ModBlock.PEACHWALL);
         blockStateModelGenerator.createDoor(ModBlock.PEACHDOOR);
         blockStateModelGenerator.createTrapdoor(ModBlock.PEACHTRAPDOOR);
 
@@ -79,7 +74,6 @@ public class ModModelsProvider extends FabricModelProvider {
         COCONUTFAMILY.pressurePlate(ModBlock.COCONUTPRESSUERPLATE);
         COCONUTFAMILY.fence(ModBlock.COCONUTFENCE);
         COCONUTFAMILY.fenceGate(ModBlock.COCONUTFENCEGATE);
-        COCONUTFAMILY.wall(ModBlock.COCONUTWALL);
         blockStateModelGenerator.createDoor(ModBlock.COCONUTDOOR);
         blockStateModelGenerator.createTrapdoor(ModBlock.COCONUTTRAPDOOR);
 
@@ -89,7 +83,6 @@ public class ModModelsProvider extends FabricModelProvider {
         CARAMBOLAFAMILY.pressurePlate(ModBlock.CARAMBOLAPRESSUERPLATE);
         CARAMBOLAFAMILY.fence(ModBlock.CARAMBOLAFENCE);
         CARAMBOLAFAMILY.fenceGate(ModBlock.CARAMBOLAFENCEGATE);
-        CARAMBOLAFAMILY.wall(ModBlock.CARAMBOLAWALL);
         blockStateModelGenerator.createDoor(ModBlock.CARAMBOLADOOR);
         blockStateModelGenerator.createTrapdoor(ModBlock.CARAMBOLATRAPDOOR);
 
@@ -99,7 +92,6 @@ public class ModModelsProvider extends FabricModelProvider {
         TOONFAMILY.pressurePlate(ModBlock.TOONPRESSUERPLATE);
         TOONFAMILY.fence(ModBlock.TOONFENCE);
         TOONFAMILY.fenceGate(ModBlock.TOONFENCEGATE);
-        TOONFAMILY.wall(ModBlock.TOONWALL);
         blockStateModelGenerator.createDoor(ModBlock.TOONDOOR);
         blockStateModelGenerator.createTrapdoor(ModBlock.TOONTRAPDOOR);
 

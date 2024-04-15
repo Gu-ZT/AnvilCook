@@ -96,7 +96,6 @@ public class ModItemGroup {
                 entries.accept(ModItems.PEARPRESSUERPLATE.getDefaultInstance());
                 entries.accept(ModItems.PEARFENCE.getDefaultInstance());
                 entries.accept(ModItems.PEARFENCEGATE.getDefaultInstance());
-                entries.accept(ModItems.PEARWALL.getDefaultInstance());
                 entries.accept(ModItems.PEARDOOR.getDefaultInstance());
                 entries.accept(ModItems.PEARTRAPDOOR.getDefaultInstance());
 
@@ -109,7 +108,6 @@ public class ModItemGroup {
                 entries.accept(ModItems.LEMONPRESSUERPLATE.getDefaultInstance());
                 entries.accept(ModItems.LEMONFENCE.getDefaultInstance());
                 entries.accept(ModItems.LEMONFENCEGATE.getDefaultInstance());
-                entries.accept(ModItems.LEMONWALL.getDefaultInstance());
                 entries.accept(ModItems.LEMONDOOR.getDefaultInstance());
                 entries.accept(ModItems.LEMONTRAPDOOR.getDefaultInstance());
 
@@ -122,7 +120,6 @@ public class ModItemGroup {
                 entries.accept(ModItems.WALNUTPRESSUERPLATE.getDefaultInstance());
                 entries.accept(ModItems.WALNUTFENCE.getDefaultInstance());
                 entries.accept(ModItems.WALNUTFENCEGATE.getDefaultInstance());
-                entries.accept(ModItems.WALNUTWALL.getDefaultInstance());
                 entries.accept(ModItems.WALNUTDOOR.getDefaultInstance());
                 entries.accept(ModItems.WALNUTTRAPDOOR.getDefaultInstance());
 
@@ -135,7 +132,6 @@ public class ModItemGroup {
                 entries.accept(ModItems.BANANAPRESSUERPLATE.getDefaultInstance());
                 entries.accept(ModItems.BANANAFENCE.getDefaultInstance());
                 entries.accept(ModItems.BANANAFENCEGATE.getDefaultInstance());
-                entries.accept(ModItems.BANANAWALL.getDefaultInstance());
                 entries.accept(ModItems.BANANADOOR.getDefaultInstance());
                 entries.accept(ModItems.BANANATRAPDOOR.getDefaultInstance());
 
@@ -148,7 +144,6 @@ public class ModItemGroup {
                 entries.accept(ModItems.PEACHPRESSUERPLATE.getDefaultInstance());
                 entries.accept(ModItems.PEACHFENCE.getDefaultInstance());
                 entries.accept(ModItems.PEACHFENCEGATE.getDefaultInstance());
-                entries.accept(ModItems.PEACHWALL.getDefaultInstance());
                 entries.accept(ModItems.PEACHDOOR.getDefaultInstance());
                 entries.accept(ModItems.PEACHTRAPDOOR.getDefaultInstance());
 
@@ -161,7 +156,6 @@ public class ModItemGroup {
                 entries.accept(ModItems.COCONUTPRESSUERPLATE.getDefaultInstance());
                 entries.accept(ModItems.COCONUTFENCE.getDefaultInstance());
                 entries.accept(ModItems.COCONUTFENCEGATE.getDefaultInstance());
-                entries.accept(ModItems.COCONUTWALL.getDefaultInstance());
                 entries.accept(ModItems.COCONUTDOOR.getDefaultInstance());
                 entries.accept(ModItems.COCONUTTRAPDOOR.getDefaultInstance());
 
@@ -174,7 +168,6 @@ public class ModItemGroup {
                 entries.accept(ModItems.CARAMBOLAPRESSUERPLATE.getDefaultInstance());
                 entries.accept(ModItems.CARAMBOLAFENCE.getDefaultInstance());
                 entries.accept(ModItems.CARAMBOLAFENCEGATE.getDefaultInstance());
-                entries.accept(ModItems.CARAMBOLAWALL.getDefaultInstance());
                 entries.accept(ModItems.CARAMBOLADOOR.getDefaultInstance());
                 entries.accept(ModItems.CARAMBOLATRAPDOOR.getDefaultInstance());
 
@@ -187,7 +180,6 @@ public class ModItemGroup {
                 entries.accept(ModItems.TOONPRESSUERPLATE.getDefaultInstance());
                 entries.accept(ModItems.TOONFENCE.getDefaultInstance());
                 entries.accept(ModItems.TOONFENCEGATE.getDefaultInstance());
-                entries.accept(ModItems.TOONWALL.getDefaultInstance());
                 entries.accept(ModItems.TOONDOOR.getDefaultInstance());
                 entries.accept(ModItems.TOONTRAPDOOR.getDefaultInstance());
 
