@@ -21,6 +21,9 @@ import java.util.function.Function;
 
 public class ModTrees {
     private static final Map<String, Block> TREE_MAP = new HashMap<>();
+
+    public static final Block APPLESAPLING = registerBlock("apple_sapling",(properties)->new SaplingBlock(new AppleTreeGrower(),properties),
+            BlockBehaviour.Properties.of().pushReaction(PushReaction.DESTROY).sound(SoundType.GRASS).noCollission().randomTicks().instabreak());
     public static final Block PEARSAPLING = registerBlock("pear_sapling",(properties)->new SaplingBlock(new PearTreeGrower(),properties),
             BlockBehaviour.Properties.of().pushReaction(PushReaction.DESTROY).sound(SoundType.GRASS).noCollission().randomTicks().instabreak());
     public static final Block LEMONSAPLING = registerBlock("lemon_sapling",(properties)->new SaplingBlock(new LemonTreeGrower(),properties),

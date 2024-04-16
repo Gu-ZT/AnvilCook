@@ -21,6 +21,7 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlac
 
 public class ModTreeFeatures{
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> APPLETREE = ModTreeFeatures.createKey("apple_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEARTREE = ModTreeFeatures.createKey("pear_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LEMONTREE = ModTreeFeatures.createKey("lemon_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WALNUTTREE = ModTreeFeatures.createKey("walnut_tree");
@@ -36,6 +37,9 @@ public class ModTreeFeatures{
                 BlockStateProvider.simple(block2),
                 new BlobFoliagePlacer(ConstantInt.of(l), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 1));
+    }
+    private static TreeConfiguration.TreeConfigurationBuilder createApple(){
+        return createStraightBlobTree(ModBlock.APPLELOG,ModBlock.APPLELEAVES,5,3,0,2).ignoreVines();
     }
     private static TreeConfiguration.TreeConfigurationBuilder createPear() {
         return createStraightBlobTree(ModBlock.PEARLOG, ModBlock.PEARLEAVES, 5, 3, 0, 3).ignoreVines();
@@ -62,6 +66,7 @@ public class ModTreeFeatures{
         return createStraightBlobTree(ModBlock.TOONLOG, ModBlock.TOONLEAVES, 7, 2, 0, 2).ignoreVines();
     }
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> bootstapContext){
+        register(bootstapContext,APPLETREE,Feature.TREE,createApple().build());
         register(bootstapContext,PEARTREE,Feature.TREE,createPear().build());
         register(bootstapContext,LEMONTREE, Feature.TREE,createLemon().build());
         register(bootstapContext,WALNUTTREE, Feature.TREE,createWalnut().build());

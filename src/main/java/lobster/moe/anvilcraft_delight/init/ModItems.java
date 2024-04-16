@@ -15,6 +15,22 @@ import java.util.function.BiFunction;
 public class ModItems {
     private static final Map<String, Item> ITEM_MAP = new HashMap<>();
 
+    public static final Item APPLELOG = registerBlock(ModBlock.APPLELOG, BlockItem::new,defaultProperties());
+    public static final Item APPLEWOOD = registerBlock(ModBlock.APPLEWOOD, BlockItem::new,defaultProperties());
+    public static final Item APPLELEAVES = registerBlock(ModBlock.APPLELEAVES,BlockItem::new,defaultProperties());
+    public static final Item APPLESAPLING = registerBlock(ModTrees.APPLESAPLING,BlockItem::new,defaultProperties());
+    public static final Item APPLEPLANKS = registerBlock(ModBlock.APPLEPLANKS,BlockItem::new,defaultProperties());
+    public static final Item APPLESTAIRS = registerBlock(ModBlock.APPLESTAIRS,BlockItem::new,defaultProperties());
+    public static final Item APPLESLAB = registerBlock(ModBlock.APPLESLAB,BlockItem::new,defaultProperties());
+    public static final Item APPLEBUTTON = registerBlock(ModBlock.APPLEBUTTON,BlockItem::new,defaultProperties());
+    public static final Item APPLEPRESSUERPLATE = registerBlock(ModBlock.APPLEPRESSUERPLATE,BlockItem::new,defaultProperties());
+    public static final Item APPLEFENCE = registerBlock(ModBlock.APPLEFENCE,BlockItem::new,defaultProperties());
+    public static final Item APPLEFENCEGATE = registerBlock(ModBlock.APPLEFENCEGATE,BlockItem::new,defaultProperties());
+    public static final Item APPLEDOOR = registerBlock(ModBlock.APPLEDOOR,BlockItem::new,defaultProperties());
+    public static final Item APPLETRAPDOOR = registerBlock(ModBlock.APPLETRAPDOOR,BlockItem::new,defaultProperties());
+
+
+
     public static final Item PEARLOG = registerBlock(ModBlock.PEARLOG, BlockItem::new,defaultProperties());
     public static final Item PEARWOOD = registerBlock(ModBlock.PEARWOOD, BlockItem::new,defaultProperties());
     public static final Item PEARLEAVES = registerBlock(ModBlock.PEARLEAVES,BlockItem::new,defaultProperties());

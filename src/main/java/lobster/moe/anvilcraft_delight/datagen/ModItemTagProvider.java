@@ -22,6 +22,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void addTags(HolderLookup.Provider arg) {
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModItems.APPLELOG)
+                .add(ModItems.APPLEWOOD)
                 .add(ModItems.PEARLOG)
                 .add(ModItems.PEARWOOD)
                 .add(ModItems.LEMONLOG)

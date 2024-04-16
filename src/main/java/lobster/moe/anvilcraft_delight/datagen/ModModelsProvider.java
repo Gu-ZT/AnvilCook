@@ -13,6 +13,7 @@ public class ModModelsProvider extends FabricModelProvider {
     }
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
+        BlockModelGenerators.BlockFamilyProvider APPLEFAMILY = blockStateModelGenerator.family(ModBlock.APPLEPLANKS);
         BlockModelGenerators.BlockFamilyProvider PEARFAMILY = blockStateModelGenerator.family(ModBlock.PEARPLANKS);
         BlockModelGenerators.BlockFamilyProvider LEMONFAMILY = blockStateModelGenerator.family(ModBlock.LEMONPLANKS);
         BlockModelGenerators.BlockFamilyProvider WALNUTFAMILY = blockStateModelGenerator.family(ModBlock.WALNUTPLANKS);
@@ -22,6 +23,14 @@ public class ModModelsProvider extends FabricModelProvider {
         BlockModelGenerators.BlockFamilyProvider CARAMBOLAFAMILY = blockStateModelGenerator.family(ModBlock.CARAMBOLAPLANKS);
         BlockModelGenerators.BlockFamilyProvider TOONFAMILY = blockStateModelGenerator.family(ModBlock.TOONPLANKS);
 
+        APPLEFAMILY.stairs(ModBlock.APPLESTAIRS);
+        APPLEFAMILY.slab(ModBlock.APPLESLAB);
+        APPLEFAMILY.button(ModBlock.APPLEBUTTON);
+        APPLEFAMILY.pressurePlate(ModBlock.APPLEPRESSUERPLATE);
+        APPLEFAMILY.fence(ModBlock.APPLEFENCE);
+        APPLEFAMILY.fenceGate(ModBlock.APPLEFENCEGATE);
+        blockStateModelGenerator.createDoor(ModBlock.APPLEDOOR);
+        blockStateModelGenerator.createTrapdoor(ModBlock.APPLETRAPDOOR);
 
         PEARFAMILY.stairs(ModBlock.PEARSTAIRS);
         PEARFAMILY.slab(ModBlock.PEARSLAB);
@@ -96,7 +105,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.createTrapdoor(ModBlock.TOONTRAPDOOR);
 
 
-
+        blockStateModelGenerator.woodProvider(ModBlock.APPLELOG).log(ModBlock.APPLELOG).wood(ModBlock.APPLEWOOD);
         blockStateModelGenerator.woodProvider(ModBlock.PEARLOG).log(ModBlock.PEARLOG).wood(ModBlock.PEARWOOD);
         blockStateModelGenerator.woodProvider(ModBlock.LEMONLOG).log(ModBlock.LEMONLOG).wood(ModBlock.LEMONWOOD);
         blockStateModelGenerator.woodProvider(ModBlock.WALNUTLOG).log(ModBlock.WALNUTLOG).wood(ModBlock.WALNUTWOOD);
@@ -107,6 +116,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.woodProvider(ModBlock.TOONLOG).log(ModBlock.TOONLOG).wood(ModBlock.TOONWOOD);
 
 
+        blockStateModelGenerator.createTrivialCube(ModBlock.APPLELEAVES);
         blockStateModelGenerator.createTrivialCube(ModBlock.PEARLEAVES);
         blockStateModelGenerator.createTrivialCube(ModBlock.LEMONLEAVES);
         blockStateModelGenerator.createTrivialCube(ModBlock.WALNUTLEAVES);
@@ -116,6 +126,8 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.createTrivialCube(ModBlock.CARAMBOLALEAVES);
         blockStateModelGenerator.createTrivialCube(ModBlock.TOONLEAVES);
 
+
+        blockStateModelGenerator.createCrossBlockWithDefaultItem(ModTrees.APPLESAPLING,BlockModelGenerators.TintState.NOT_TINTED);
         blockStateModelGenerator.createCrossBlockWithDefaultItem(ModTrees.PEARSAPLING,BlockModelGenerators.TintState.NOT_TINTED);
         blockStateModelGenerator.createCrossBlockWithDefaultItem(ModTrees.LEMONSAPLING,BlockModelGenerators.TintState.NOT_TINTED);
         blockStateModelGenerator.createCrossBlockWithDefaultItem(ModTrees.WALNUTSAPLING,BlockModelGenerators.TintState.NOT_TINTED);

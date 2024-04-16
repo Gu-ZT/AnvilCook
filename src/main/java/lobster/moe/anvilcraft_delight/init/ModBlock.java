@@ -15,6 +15,25 @@ import java.util.function.Function;
 
 public class ModBlock {
     private static final Map<String,Block> BLOCK_MAP = new HashMap<>();
+
+
+
+
+    public static final Block APPLELOG = registerBlock("apple_log", RotatedPillarBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_LOG));
+    public static final Block APPLEWOOD = registerBlock("apple_wood", RotatedPillarBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_WOOD));
+    public static final Block APPLEPLANKS = registerBlock("apple_planks", Block::new,BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block APPLESTAIRS = registerBlock("apple_stairs",(properties) -> new StairBlock(ModBlock.APPLEPLANKS.defaultBlockState(),properties),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block APPLESLAB = registerBlock("apple_slab",SlabBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block APPLEBUTTON = registerBlock("apple_button",(properties) -> new ButtonBlock(properties, BlockSetType.OAK,20,true),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block APPLEPRESSUERPLATE = registerBlock("apple_pressure_plate",(properties) -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,properties,BlockSetType.OAK),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block APPLEFENCE = registerBlock("apple_fence",FenceBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block APPLEFENCEGATE = registerBlock("apple_fence_gate",(properties) -> new FenceGateBlock(properties, WoodType.OAK),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block APPLEDOOR = registerBlock("apple_door",(properties) -> new DoorBlock(properties.noOcclusion(),BlockSetType.OAK),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block APPLETRAPDOOR = registerBlock("apple_trapdoor",(properties) -> new TrapDoorBlock(properties.noOcclusion(),BlockSetType.OAK),BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));
+    public static final Block APPLELEAVES = registerBlock("apple_leaves", LeavesBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES));
+
+
+
     public static final Block PEARLOG = registerBlock("pear_log", RotatedPillarBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_LOG));
     public static final Block PEARWOOD = registerBlock("pear_wood", RotatedPillarBlock::new,BlockBehaviour.Properties.copy(Blocks.OAK_WOOD));
     public static final Block PEARPLANKS = registerBlock("pear_planks", Block::new,BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS));

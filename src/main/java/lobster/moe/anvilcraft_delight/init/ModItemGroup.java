@@ -87,6 +87,18 @@ public class ModItemGroup {
     public static final CreativeModeTab.Builder ANVILCRAFTDELIGHT_BLOCKS = createItemGroup("blocks",FabricItemGroup::builder)
             .icon(()->new ItemStack(ModBlock.PEARLOG))
             .displayItems((ctx,entries)->{
+                entries.accept(ModItems.APPLELOG.getDefaultInstance());
+                entries.accept(ModItems.APPLEWOOD.getDefaultInstance());
+                entries.accept(ModItems.APPLEPLANKS.getDefaultInstance());
+                entries.accept(ModItems.APPLESTAIRS.getDefaultInstance());
+                entries.accept(ModItems.APPLESLAB.getDefaultInstance());
+                entries.accept(ModItems.APPLEBUTTON.getDefaultInstance());
+                entries.accept(ModItems.APPLEPRESSUERPLATE.getDefaultInstance());
+                entries.accept(ModItems.APPLEFENCE.getDefaultInstance());
+                entries.accept(ModItems.APPLEFENCEGATE.getDefaultInstance());
+                entries.accept(ModItems.APPLEDOOR.getDefaultInstance());
+                entries.accept(ModItems.APPLETRAPDOOR.getDefaultInstance());
+
                 entries.accept(ModItems.PEARLOG.getDefaultInstance());
                 entries.accept(ModItems.PEARWOOD.getDefaultInstance());
                 entries.accept(ModItems.PEARPLANKS.getDefaultInstance());
@@ -183,6 +195,7 @@ public class ModItemGroup {
                 entries.accept(ModItems.TOONDOOR.getDefaultInstance());
                 entries.accept(ModItems.TOONTRAPDOOR.getDefaultInstance());
 
+                entries.accept(ModItems.APPLELEAVES.getDefaultInstance());
                 entries.accept(ModItems.PEARLEAVES.getDefaultInstance());
                 entries.accept(ModItems.LEMONLEAVES.getDefaultInstance());
                 entries.accept(ModItems.WALNUTLEAVES.getDefaultInstance());
@@ -192,7 +205,7 @@ public class ModItemGroup {
                 entries.accept(ModItems.CARAMBOLALEAVES.getDefaultInstance());
                 entries.accept(ModItems.TOONLEAVES.getDefaultInstance());
 
-
+                entries.accept(ModItems.APPLESAPLING.getDefaultInstance());
                 entries.accept(ModItems.PEARSAPLING.getDefaultInstance());
                 entries.accept(ModItems.LEMONSAPLING.getDefaultInstance());
                 entries.accept(ModItems.WALNUTSAPLING.getDefaultInstance());

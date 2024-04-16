@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "anvilcraft_delight:apple_log",
+    "anvilcraft_delight:apple_wood",
     "anvilcraft_delight:pear_log",
     "anvilcraft_delight:pear_wood",
     "anvilcraft_delight:lemon_log",
