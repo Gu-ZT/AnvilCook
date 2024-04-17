@@ -12,7 +12,10 @@ import java.util.function.Function;
 
 public class ModJams {
     private static final Map<String, Item> ITEM_MAP = new HashMap<>();
+    public final static Item GLOWBERRIESJAM = registerItem("glow_berries_jam",Item::new,defaultProperties().food(lobster.moe.anvilcraft_delight.item.ModJams.GLOWBERRIESJAM));
+    public final static Item SWEETBERRIESJAM = registerItem("sweet_berries_jam",Item::new,defaultProperties().food(lobster.moe.anvilcraft_delight.item.ModJams.SWEETBERRIESJAM));
     public final static Item APPLEJAM = registerItem("apple_jam",Item::new,defaultProperties().food(lobster.moe.anvilcraft_delight.item.ModJams.APPLEJAM));
+
     public final static Item PEARJAM = registerItem("pear_jam",Item::new,defaultProperties().food(lobster.moe.anvilcraft_delight.item.ModJams.PEARJAM));
     public final static Item LEMONJAM = registerItem("lemon_jam",Item::new,defaultProperties().food(lobster.moe.anvilcraft_delight.item.ModJams.LEMOONJAM));
     public final static Item GRAPEJAM = registerItem("grape_jam",Item::new,defaultProperties().food(lobster.moe.anvilcraft_delight.item.ModJams.GRAPEJAM));

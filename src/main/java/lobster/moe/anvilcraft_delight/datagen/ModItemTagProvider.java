@@ -47,7 +47,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.HONEY_BOTTLE)
                 .add(Items.PUMPKIN_PIE)
                 .add(Items.GLOW_BERRIES)
+                .add(ModJams.GLOWBERRIESJAM)
                 .add(Items.SWEET_BERRIES)
+                .add(ModJams.SWEETBERRIESJAM)
                 .add(Items.MELON_SLICE)
                 .add(ModFruit.PEAR)
                 .add(ModJams.PEARJAM)
@@ -124,6 +126,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.GOLDEN_APPLE)
                 .add(Items.ENCHANTED_GOLDEN_APPLE)
                 .add(Items.GOLDEN_CARROT);
+        getOrCreateTagBuilder(ModFoodTags.POISON)//毒
+                .add(Items.SPIDER_EYE);
 
     }
 

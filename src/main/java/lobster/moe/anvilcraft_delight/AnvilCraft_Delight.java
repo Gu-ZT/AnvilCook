@@ -22,6 +22,7 @@ public class AnvilCraft_Delight implements ModInitializer {
         ModFruit.register();
         ModJams.register();
         ModItemGroup.register();
+        ModPlayerStatistics.register();
     }
     public static @NotNull ResourceLocation of(String id) {
         return new ResourceLocation(MOD_ID, id);

@@ -62,6 +62,8 @@ public class ModItemGroup {
     public static final CreativeModeTab.Builder ANVILCRAFTDELIGHT_JAMS = createItemGroup("jams",FabricItemGroup::builder)
             .icon(()-> new ItemStack(ModJams.CHILIJAM))
             .displayItems((ctx,entries)->{
+                entries.accept(ModJams.GLOWBERRIESJAM.getDefaultInstance());
+                entries.accept(ModJams.SWEETBERRIESJAM.getDefaultInstance());
                 entries.accept(ModJams.APPLEJAM.getDefaultInstance());
                 entries.accept(ModJams.PEARJAM.getDefaultInstance());
                 entries.accept(ModJams.LEMONJAM.getDefaultInstance());
