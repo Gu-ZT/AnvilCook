@@ -2,7 +2,6 @@ package lobster.moe.anvilcraft_delight.events;
 
 import lobster.moe.anvilcraft_delight.init.ModPlayerStatistics;
 import lobster.moe.anvilcraft_delight.tag.ModFoodTags;
-import net.minecraft.network.chat.contents.LiteralContents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -11,7 +10,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import org.w3c.dom.Text;
 
 import java.util.Random;
 

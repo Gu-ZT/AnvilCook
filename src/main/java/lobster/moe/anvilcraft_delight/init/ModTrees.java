@@ -1,7 +1,5 @@
 package lobster.moe.anvilcraft_delight.init;
 
-import dev.dubhe.anvilcraft.AnvilCraft;
-import dev.dubhe.anvilcraft.init.ModBlocks;
 import lobster.moe.anvilcraft_delight.AnvilCraft_Delight;
 import lobster.moe.anvilcraft_delight.block.grow.*;
 import net.minecraft.core.Registry;
@@ -9,8 +7,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.WallBlock;
-import net.minecraft.world.level.block.grower.OakTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
 import org.jetbrains.annotations.NotNull;
