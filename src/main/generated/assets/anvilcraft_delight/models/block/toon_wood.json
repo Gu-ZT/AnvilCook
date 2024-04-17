@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "anvilcraft_delight:block/toon_log",
-    "side": "anvilcraft_delight:block/toon_log"
-  }
-}

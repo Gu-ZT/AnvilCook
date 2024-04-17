@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "anvilcraft_delight:block/lemon_sapling"
-  }
-}

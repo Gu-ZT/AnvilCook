@@ -54,7 +54,7 @@ dependencies {
     modCompileOnly "maven.modrinth:create-fabric:${project.create_version}"
     compileOnly "org.projectlombok:lombok:${lombok_version}"
     annotationProcessor "org.projectlombok:lombok:${lombok_version}"
-    modImplementation "dev.dubhe:AnvilCraftMod:1.0.0+build.162"
+    modImplementation "dev.dubhe:AnvilCraftMod:1.1.0+build.252"
 }
 
 processResources {
