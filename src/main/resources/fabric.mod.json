@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "anvilcraft_delight",
+  "id": "anvilcook",
   "version": "0.1.0",
-  "name": "AnvilCraft_Delight",
+  "name": "AnvilCook",
   "description": "",
   "authors": [],
   "contact": {
     "repo": "https://github.com/乖乖小徐卖个萌/AnvilCraft_Delight"
   },
   "license": "LGPL-3.0",
-  "icon": "assets/anvilcraft_delight/icon.png",
+  "icon": "assets/anvilcook/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "lobster.moe.anvilcraft_delight.client.AnvilCraft_DelightClient"
+      "lobster.moe.anvilcook.client.AnvilCookClient"
     ],
     "main": [
-      "lobster.moe.anvilcraft_delight.AnvilCraft_Delight"
+      "lobster.moe.anvilcook.AnvilCook"
     ],
     "fabric-datagen": [
-      "lobster.moe.anvilcraft_delight.AnvilCraft_DelightDataGenerator"
+      "lobster.moe.anvilcook.AnvilCookDataGenerator"
     ]
   },
   "mixins": [
-    "anvilcraft_delight.mixins.json"
+    "anvilcook.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.15.7",

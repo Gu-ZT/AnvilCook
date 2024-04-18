@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "anvilcraft:stamping_platform",
+    "anvilcraft:royal_anvil",
+    "anvilcraft:magnet_block",
+    "anvilcraft:hollow_magnet_block",
+    "anvilcraft:ferrite_core_magnet_block",
+    "anvilcraft:auto_crafter",
+    "anvilcraft:chute",
+    "anvilcraft:royal_steel_block",
+    "anvilcraft:royal_grindstone",
+    "anvilcraft:royal_smithing_table",
+    "anvilcraft:smooth_royal_steel_block",
+    "anvilcraft:cut_royal_steel_block",
+    "anvilcraft:cut_royal_steel_slab",
+    "anvilcraft:cut_royal_steel_stairs",
+    "anvilcraft:lava_cauldron"
+  ]
+}

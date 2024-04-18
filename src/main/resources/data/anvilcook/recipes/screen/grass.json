@@ -1,0 +1,119 @@
+{
+  "type": "anvilcraft:anvil_processing",
+  "icon": {
+    "item": "minecraft:grass"
+  },
+  "outcomes": [
+    {
+      "type": "spawn_item",
+      "chance": 0.01,
+      "offset": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "result": {
+        "item": "anvilcook:houttuynia_cordata"
+      }
+    },
+    {
+      "type": "spawn_item",
+      "chance": 0.01,
+      "offset": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "result": {
+        "item": "anvilcook:coriander"
+      }
+    },
+    {
+      "type": "spawn_item",
+      "chance": 0.01,
+      "offset": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "result": {
+        "item": "anvilcook:celery"
+      }
+    },{
+      "type": "spawn_item",
+      "chance": 0.01,
+      "offset": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "result": {
+        "item": "anvilcook:spinach"
+      }
+    },{
+      "type": "spawn_item",
+      "chance": 0.01,
+      "offset": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "result": {
+        "item": "anvilcook:cabbage"
+      }
+    },{
+      "type": "spawn_item",
+      "chance": 0.01,
+      "offset": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "result": {
+        "item": "anvilcook:chinese_cabbage"
+      }
+    },{
+      "type": "spawn_item",
+      "chance": 0.01,
+      "offset": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "result": {
+        "item": "anvilcook:pea"
+      }
+    }
+  ],
+  "predicates": [
+    {
+      "type": "has_block",
+      "match_block": {
+        "blocks": [
+          "minecraft:iron_trapdoor"
+        ]
+      },
+      "offset": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "type": "has_item_ingredient",
+      "match_item": {
+        "count": {
+          "min": 1
+        },
+        "items": [
+          "minecraft:grass"
+        ]
+      },
+      "offset": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    }
+  ]
+}

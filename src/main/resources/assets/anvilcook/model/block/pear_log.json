@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "anvilcook:block/pear_log_top",
+    "side": "anvilcook:block/pear_log"
+  }
+}

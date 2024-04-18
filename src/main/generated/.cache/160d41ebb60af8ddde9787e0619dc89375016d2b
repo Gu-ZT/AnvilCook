@@ -1,0 +1,9 @@
+// 1.20.1	2024-04-18T22:27:42.8548405	AnvilCraft/Tags for minecraft:block
+8dac1e33992c424887f41a5f04f1fb4c48895ce0 data\anvilcraft\tags\blocks\mushroom_block.json
+bceb9a55528cd17a31025d6422745b835a946495 data\anvilcraft\tags\blocks\redstone_torch.json
+17cdc1c92fc6da5fc4159a1c8dfae5db1d69f98f data\minecraft\tags\blocks\anvil.json
+cdb558cff0cc1b4b9bf496209c519779276a682b data\minecraft\tags\blocks\beacon_base_blocks.json
+17cdc1c92fc6da5fc4159a1c8dfae5db1d69f98f data\anvilcraft\tags\blocks\cant_broken_anvil.json
+b2958b87e2bb5c11b8274b04bfb47f465ba76f1b data\anvilcraft\tags\blocks\magnet.json
+9fd4ef2432de5d7e29717ec2650d270f6a1dc39d data\minecraft\tags\blocks\mineable\axe.json
+cefc8624da2ee1bf9cd1598bf7bf51f9bbf1e447 data\minecraft\tags\blocks\mineable\pickaxe.json

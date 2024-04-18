@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "anvilcook:block/lemon_log_top",
+    "side": "anvilcook:block/lemon_log"
+  }
+}
