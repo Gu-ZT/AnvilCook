@@ -1,6 +1,7 @@
 package lobster.moe.anvilcook.events.effects;
 
-import lobster.moe.anvilcook.tag.ModFoodTags;
+import java.util.Random;
+import lobster.moe.anvilcook.init.ModPlayerStatistics;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -11,12 +12,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-import java.util.Random;
+public class Luxurious implements FoodType{
 
-public class Luxurious {
-    public static void luxuriousEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation resourceLocation){
-        if (itemStack.is(ModFoodTags.LUXURIOUS)){
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==1){
+
+    @Override
+    public void effect(ItemStack itemStack, ServerPlayer serverPlayer, Level level){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==1){
                 serverPlayer.addEffect(new MobEffectInstance(MobEffects.LUCK,5,1));
                 Random RANDOM = new Random();
                 if (RANDOM.nextDouble() <= 0.05) {
@@ -25,9 +26,19 @@ public class Luxurious {
                     level.addFreshEntity(goldIngotEntity);
                 }
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==2){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==2){
                 serverPlayer.addEffect(new MobEffectInstance(MobEffects.CONFUSION,5,1));
             }
-        }
+
+    }
+
+    @Override
+    public ResourceLocation getCunterResourceLocation() {
+        return ModPlayerStatistics.LUXURIOUSCOUNTER;
+    }
+
+    @Override
+    public ResourceLocation getjudgeResourceLocation() {
+        return ModPlayerStatistics.LUXURIOUSJUDGE;
     }
 }
