@@ -1,5 +1,5 @@
 {
-  "itemGroup.anvilcook.vegetable": "铁砧乐事 - 蔬菜",
+  "itemGroup.anvilcook.vegetable": "铁砧食艺 - 蔬菜",
   "item.anvilcook.toon_leaf": "香椿叶",
   "item.anvilcook.houttuynia_cordata": "鱼腥草",
   "item.anvilcook.coriander": "香菜",
@@ -26,7 +26,7 @@
   "item.anvilcook.flammulina_enoki": "金针菇",
 
 
-  "itemGroup.anvilcook.fruit": "铁砧乐事 - 水果",
+  "itemGroup.anvilcook.fruit": "铁砧食艺 - 水果",
   "item.anvilcook.pear": "梨",
   "item.anvilcook.lemon": "柠檬",
   "item.anvilcook.grape": "葡萄",
@@ -41,7 +41,7 @@
   "item.anvilcook.toon": "香椿",
 
 
-  "itemGroup.anvilcook.jams": "铁砧乐事 - 果酱",
+  "itemGroup.anvilcook.jams": "铁砧食艺 - 果酱",
   "item.anvilcook.glow_berries_jam": "发光浆果酱",
   "item.anvilcook.sweet_berries_jam": "甜浆果酱",
   "item.anvilcook.apple_jam": "苹果酱",
@@ -57,7 +57,7 @@
   "item.anvilcook.tomato_jam": "番茄酱",
 
 
-  "itemGroup.anvilcook.cereals": "铁砧乐事 - 谷物",
+  "itemGroup.anvilcook.cereals": "铁砧食艺 - 谷物",
   "item.anvilcook.rice": "大米",
   "item.anvilcook.taro": "毛芋",
   "item.anvilcook.corn": "玉米",
@@ -66,7 +66,7 @@
   "item.anvilcook.sorghum": "高粱",
 
 
-  "itemGroup.anvilcook.blocks": "铁砧乐事 - 方块",
+  "itemGroup.anvilcook.blocks": "铁砧食艺 - 方块",
   "block.anvilcook.apple_log": "苹果原木",
   "block.anvilcook.apple_wood": "苹果木",
   "block.anvilcook.apple_planks": "苹果木板",
@@ -188,15 +188,15 @@
 
 
 
-  "stat.anvilcook.sweet_counter": "甜tag食用次数",
-  "stat.anvilcook.acid_counter": "酸tag食用次数",
-  "stat.anvilcook.hot_counter": "辣tag食用次数",
-  "stat.anvilcook.nut_counter": "坚果tag食用次数",
-  "stat.anvilcook.satiety_counter": "饱腹tag食用次数",
-  "stat.anvilcook.fruit_counter": "果味tag食用次数",
-  "stat.anvilcook.meat_counter": "肉tag食用次数",
-  "stat.anvilcook.seafood_counter": "海味tag食用次数",
-  "stat.anvilcook.unbelievable_counter": "不可思议tag食用次数",
-  "stat.anvilcook.luxurious_counter": "奢华tag食用次数",
-  "stat.anvilcook.poison_counter": "毒tag食用次数"
+  "stat.anvilcook.sweet_counter": "tag甜食用次数",
+  "stat.anvilcook.acid_counter": "tag酸食用次数",
+  "stat.anvilcook.hot_counter": "tag辣食用次数",
+  "stat.anvilcook.nut_counter": "tag坚果食用次数",
+  "stat.anvilcook.satiety_counter": "tag饱腹食用次数",
+  "stat.anvilcook.fruit_counter": "tag果味食用次数",
+  "stat.anvilcook.meat_counter": "tag肉食用次数",
+  "stat.anvilcook.seafood_counter": "tag海味食用次数",
+  "stat.anvilcook.unbelievable_counter": "tag不可思议食用次数",
+  "stat.anvilcook.luxurious_counter": "tag奢华食用次数",
+  "stat.anvilcook.poison_counter": "tag毒食用次数"
 }
