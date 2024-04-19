@@ -11,17 +11,17 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class Meat {
-    public static void meatEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation resourceLocation,ResourceLocation resourceLocation2){
+    public static void meatEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation judge,ResourceLocation counter){
         if (itemStack.is(ModFoodTags.MEAT)){
             int l = 0;
-            int num=serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation2);
+            int num=serverPlayer.getStats().getValue(Stats.CUSTOM,counter);
             for (;num>=1;num=num/ FoodTagCounter.judgenum){
                 l=l+1;
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==1){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==1){
                 serverPlayer.addEffect(new MobEffectInstance(MobEffects.SATURATION,40*l,1));
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==2){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==2){
                 serverPlayer.addEffect(new MobEffectInstance(MobEffects.HUNGER,20*l,1));
             }
         }

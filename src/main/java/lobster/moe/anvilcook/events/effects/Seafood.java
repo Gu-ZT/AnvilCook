@@ -11,18 +11,18 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class Seafood {
-    public static void seafoodEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation resourceLocation,ResourceLocation resourceLocation2){
+    public static void seafoodEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation judge,ResourceLocation counter){
         if (itemStack.is(ModFoodTags.SEAFOOD)){
             int l = 0;
-            int num=serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation2);
+            int num=serverPlayer.getStats().getValue(Stats.CUSTOM,counter);
             for (;num>=1;num=num/ FoodTagCounter.judgenum){
                 l=l+1;
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==1){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==1){
                 serverPlayer.addEffect(new MobEffectInstance(MobEffects.SATURATION,10*l,1));
                 serverPlayer.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE,15*l,1));
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==2){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==2){
                 float currentHealth = serverPlayer.getHealth();
                 float newHealth = currentHealth - 2.0f*l;
                 serverPlayer.setHealth(newHealth);

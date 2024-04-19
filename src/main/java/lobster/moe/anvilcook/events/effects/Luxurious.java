@@ -15,14 +15,14 @@ import net.minecraft.world.level.Level;
 import java.util.Random;
 
 public class Luxurious {
-    public static void luxuriousEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation resourceLocation,ResourceLocation resourceLocation2){
+    public static void luxuriousEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation judge,ResourceLocation counter){
         if (itemStack.is(ModFoodTags.LUXURIOUS)){
             int l = 0;
-            int num=serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation2);
+            int num=serverPlayer.getStats().getValue(Stats.CUSTOM,counter);
             for (;num>=1;num=num/ FoodTagCounter.judgenum){
                 l=l+1;
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==1){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==1){
                 serverPlayer.addEffect(new MobEffectInstance(MobEffects.LUCK,5*l,1));
                 Random RANDOM = new Random();
                 if (RANDOM.nextDouble() <= 0.05*l) {
@@ -31,7 +31,7 @@ public class Luxurious {
                     level.addFreshEntity(goldIngotEntity);
                 }
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==2){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==2){
                 serverPlayer.addEffect(new MobEffectInstance(MobEffects.CONFUSION,5*l,1));
             }
         }
