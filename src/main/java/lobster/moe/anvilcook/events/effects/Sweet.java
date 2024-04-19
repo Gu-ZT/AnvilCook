@@ -1,6 +1,6 @@
 package lobster.moe.anvilcook.events.effects;
 
-import lobster.moe.anvilcook.init.ModPlayerStatistics;
+import lobster.moe.anvilcook.events.FoodTagCounter;
 import lobster.moe.anvilcook.tag.ModFoodTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -10,29 +10,22 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class Sweet implements FoodType{
-
-    @Override
-    public void effect(ItemStack itemStack, ServerPlayer serverPlayer, Level level){
+public class Sweet {
+    public static void sweetEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation resourceLocation,ResourceLocation resourceLocation2){
         if (itemStack.is(ModFoodTags.SWEET)){
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==1){
+            int l = 0;
+            int num=serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation2);
+            for (;num>=1;num=num/ FoodTagCounter.judgenum){
+                l=l+1;
+            }
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==1){
                 float currentHealth = serverPlayer.getHealth();
-                float newHealth = currentHealth + 1.0f;
+                float newHealth = currentHealth + 1.0f*l;
                 serverPlayer.setHealth(newHealth);
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==2){
-                serverPlayer.addEffect(new MobEffectInstance(MobEffects.HUNGER,5,1));
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==2){
+                serverPlayer.addEffect(new MobEffectInstance(MobEffects.HUNGER,5*l,1));
             }
         }
-    }
-
-    @Override
-    public ResourceLocation getCunterResourceLocation() {
-        return ModPlayerStatistics.SWEETCOUNTER;
-    }
-
-    @Override
-    public ResourceLocation getjudgeResourceLocation() {
-        return ModPlayerStatistics.SWEETCOUNTER;
     }
 }

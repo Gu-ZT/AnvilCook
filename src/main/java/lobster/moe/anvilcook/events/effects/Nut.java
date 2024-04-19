@@ -1,6 +1,7 @@
 package lobster.moe.anvilcook.events.effects;
 
-import lobster.moe.anvilcook.init.ModPlayerStatistics;
+import lobster.moe.anvilcook.events.FoodTagCounter;
+import lobster.moe.anvilcook.tag.ModFoodTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -9,29 +10,22 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class Nut implements FoodType{
-    @Override
-    public void effect(ItemStack itemStack, ServerPlayer serverPlayer, Level level){
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==1){
-                serverPlayer.addEffect(new MobEffectInstance(MobEffects.SATURATION,5,1));
+public class Nut {
+    public static void nutEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation resourceLocation,ResourceLocation resourceLocation2){
+        if (itemStack.is(ModFoodTags.NUT)){
+            int l = 0;
+            int num=serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation2);
+            for (;num>=1;num=num/ FoodTagCounter.judgenum){
+                l=l+1;
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==2){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==1){
+                serverPlayer.addEffect(new MobEffectInstance(MobEffects.SATURATION,5*l,1));
+            }
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,resourceLocation)==2){
                 float currentHealth = serverPlayer.getHealth();
-                float newHealth = currentHealth - 2.0f;
+                float newHealth = currentHealth - 2.0f*l;
                 serverPlayer.setHealth(newHealth);
             }
-
+        }
     }
-
-
-    @Override
-    public ResourceLocation getCunterResourceLocation() {
-        return ModPlayerStatistics.NUTCOUNTER;
-    }
-
-    @Override
-    public ResourceLocation getjudgeResourceLocation() {
-        return ModPlayerStatistics.NUTJUDGE;
-    }
-
 }
