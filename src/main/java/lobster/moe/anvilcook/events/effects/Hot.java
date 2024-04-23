@@ -1,7 +1,6 @@
 package lobster.moe.anvilcook.events.effects;
 
-import lobster.moe.anvilcook.events.FoodTagCounter;
-import lobster.moe.anvilcook.tag.ModFoodTags;
+import lobster.moe.anvilcook.init.ModPlayerStatistics;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -10,24 +9,30 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class Hot {
-    public static void hotEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation judge,ResourceLocation counter){
-        if (itemStack.is(ModFoodTags.HOT)){
-            int l = 0;
-            int num=serverPlayer.getStats().getValue(Stats.CUSTOM,counter);
-            for (;num>=1;num=num/ FoodTagCounter.judgenum){
-                l=l+1;
+public class Hot implements FoodType{
+
+    @Override
+    public void effect(ItemStack itemStack, ServerPlayer serverPlayer, Level level){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==1){
+                serverPlayer.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED,20,1));
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==1){
-                serverPlayer.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED,15*l,1));
-            }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==2){
-                MobEffectInstance fireEffect = new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 15*l, 0);
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==2){
+                MobEffectInstance fireEffect = new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 20, 0);
                 serverPlayer.addEffect(fireEffect);
                 float currentHealth = serverPlayer.getHealth();
-                float newHealth = currentHealth - 2.0f*l;
+                float newHealth = currentHealth - 2.0f;
                 serverPlayer.setHealth(newHealth);
             }
-        }
+
+    }
+
+    @Override
+    public ResourceLocation getCunterResourceLocation() {
+        return ModPlayerStatistics.NUTCOUNTER;
+    }
+
+    @Override
+    public ResourceLocation getjudgeResourceLocation() {
+        return ModPlayerStatistics.NUTJUDGE;
     }
 }

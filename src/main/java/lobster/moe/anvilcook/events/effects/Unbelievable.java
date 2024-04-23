@@ -1,6 +1,6 @@
 package lobster.moe.anvilcook.events.effects;
 
-import lobster.moe.anvilcook.events.FoodTagCounter;
+import lobster.moe.anvilcook.init.ModPlayerStatistics;
 import lobster.moe.anvilcook.tag.ModFoodTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -10,24 +10,31 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class Unbelievable {
-    public static void unbelievableEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation judge,ResourceLocation counter){
+public class Unbelievable implements FoodType{
+
+    public void effect(ItemStack itemStack, ServerPlayer serverPlayer, Level level){
         if (itemStack.is(ModFoodTags.UNBELIEVABLE)){
-            int l = 0;
-            int num=serverPlayer.getStats().getValue(Stats.CUSTOM,counter);
-            for (;num>=1;num=num/ FoodTagCounter.judgenum){
-                l=l+1;
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==1){
+                serverPlayer.addEffect(new MobEffectInstance(MobEffects.LUCK,20,1));
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==1){
-                serverPlayer.addEffect(new MobEffectInstance(MobEffects.LUCK,15*l,1));
-            }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==2){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==2){
                 float currentHealth = serverPlayer.getHealth();
-                float newHealth = currentHealth - 9.0f*l;
+                float newHealth = currentHealth - 9.0f;
                 serverPlayer.setHealth(newHealth);
-                serverPlayer.addEffect(new MobEffectInstance(MobEffects.WEAKNESS,20*l,1));
-                serverPlayer.addEffect(new MobEffectInstance(MobEffects.WITHER,20*l,1));
+                serverPlayer.addEffect(new MobEffectInstance(MobEffects.WEAKNESS,20,1));
+                serverPlayer.addEffect(new MobEffectInstance(MobEffects.WITHER,20,1));
             }
         }
+    }
+
+
+    @Override
+    public ResourceLocation getCunterResourceLocation() {
+        return ModPlayerStatistics.UNBELIEVABLECOUNTER;
+    }
+
+    @Override
+    public ResourceLocation getjudgeResourceLocation() {
+        return ModPlayerStatistics.UNBELIEVABLEJUDGE;
     }
 }

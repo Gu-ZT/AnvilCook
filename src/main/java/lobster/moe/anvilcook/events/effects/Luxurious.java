@@ -1,7 +1,7 @@
 package lobster.moe.anvilcook.events.effects;
 
-import lobster.moe.anvilcook.events.FoodTagCounter;
-import lobster.moe.anvilcook.tag.ModFoodTags;
+import java.util.Random;
+import lobster.moe.anvilcook.init.ModPlayerStatistics;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -12,28 +12,33 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-import java.util.Random;
+public class Luxurious implements FoodType{
 
-public class Luxurious {
-    public static void luxuriousEffect(ItemStack itemStack,Level level, ServerPlayer serverPlayer, ResourceLocation judge,ResourceLocation counter){
-        if (itemStack.is(ModFoodTags.LUXURIOUS)){
-            int l = 0;
-            int num=serverPlayer.getStats().getValue(Stats.CUSTOM,counter);
-            for (;num>=1;num=num/ FoodTagCounter.judgenum){
-                l=l+1;
-            }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==1){
-                serverPlayer.addEffect(new MobEffectInstance(MobEffects.LUCK,5*l,1));
+
+    @Override
+    public void effect(ItemStack itemStack, ServerPlayer serverPlayer, Level level){
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==1){
+                serverPlayer.addEffect(new MobEffectInstance(MobEffects.LUCK,5,1));
                 Random RANDOM = new Random();
-                if (RANDOM.nextDouble() <= 0.05*l) {
+                if (RANDOM.nextDouble() <= 0.05) {
                     ItemStack goldIngotStack = new ItemStack(Items.DIAMOND);
                     ItemEntity goldIngotEntity = new ItemEntity(level, serverPlayer.xOld, serverPlayer.yOld, serverPlayer.zOld, goldIngotStack);
                     level.addFreshEntity(goldIngotEntity);
                 }
             }
-            if (serverPlayer.getStats().getValue(Stats.CUSTOM,judge)==2){
-                serverPlayer.addEffect(new MobEffectInstance(MobEffects.CONFUSION,5*l,1));
+            if (serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation())==2){
+                serverPlayer.addEffect(new MobEffectInstance(MobEffects.CONFUSION,5,1));
             }
-        }
+
+    }
+
+    @Override
+    public ResourceLocation getCunterResourceLocation() {
+        return ModPlayerStatistics.LUXURIOUSCOUNTER;
+    }
+
+    @Override
+    public ResourceLocation getjudgeResourceLocation() {
+        return ModPlayerStatistics.LUXURIOUSJUDGE;
     }
 }
