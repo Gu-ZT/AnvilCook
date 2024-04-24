@@ -1,6 +1,6 @@
 package lobster.moe.anvilcook.Mixin;
 
-import lobster.moe.anvilcook.events.FoodTagChecker;
+import lobster.moe.anvilcook.events.OnFinishEatingFood;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -14,6 +14,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class ModFoodItem {
     @Inject(method = "finishUsingItem",at = @At("HEAD"))
     private void finishUsingItem(ItemStack itemStack, Level level, LivingEntity livingEntity, CallbackInfoReturnable<ItemStack> cir){
-        FoodTagChecker.FinishEating(itemStack,level,livingEntity);
+        OnFinishEatingFood.FinishEating(itemStack,level,livingEntity);
     }
 }
