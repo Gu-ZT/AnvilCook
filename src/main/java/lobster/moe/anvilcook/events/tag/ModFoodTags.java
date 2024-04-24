@@ -1,4 +1,4 @@
-package lobster.moe.anvilcook.tag;
+package lobster.moe.anvilcook.events.tag;
 
 import lobster.moe.anvilcook.AnvilCook;
 import net.minecraft.core.registries.Registries;

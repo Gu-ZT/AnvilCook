@@ -87,7 +87,7 @@ public class ModItemGroup {
                 entries.accept(ModCereals.SORGHUM.getDefaultInstance());
             });
     public static final CreativeModeTab.Builder ANVILCOOK_BLOCKS = createItemGroup("blocks",FabricItemGroup::builder)
-            .icon(()->new ItemStack(ModBlock.PEARLOG))
+            .icon(()->new ItemStack(ModWood.PEARLOG))
             .displayItems((ctx,entries)->{
                 entries.accept(ModItems.APPLELOG.getDefaultInstance());
                 entries.accept(ModItems.APPLEWOOD.getDefaultInstance());
@@ -218,7 +218,11 @@ public class ModItemGroup {
                 entries.accept(ModItems.TOONASAPLING.getDefaultInstance());
             });
 
-
+//    public static final CreativeModeTab.Builder ANVILCOOK_SEEDS = createItemGroup("seeds",FabricItemGroup::builder)
+//            .icon(()->new ItemStack(ModSeeds.STRAWBERRYSEED))
+//            .displayItems((ctx,entries)->{
+//                entries.accept(ModSeeds.STRAWBERRYSEED);
+//            });
 
 
     private static CreativeModeTab.@NotNull Builder createItemGroup(String id, @NotNull Supplier<CreativeModeTab.Builder> itemGroupBuilder) {

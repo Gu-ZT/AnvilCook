@@ -4,7 +4,7 @@ import lobster.moe.anvilcook.init.ModFruit;
 import lobster.moe.anvilcook.init.ModItems;
 import lobster.moe.anvilcook.init.ModJams;
 import lobster.moe.anvilcook.init.ModVegetable;
-import lobster.moe.anvilcook.tag.ModFoodTags;
+import lobster.moe.anvilcook.events.tag.ModFoodTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;

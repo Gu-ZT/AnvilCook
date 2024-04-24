@@ -1,6 +1,6 @@
 package lobster.moe.anvilcook.datagen;
 
-import lobster.moe.anvilcook.init.ModBlock;
+import lobster.moe.anvilcook.init.ModWood;
 import lobster.moe.anvilcook.init.ModTrees;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -13,118 +13,118 @@ public class ModModelsProvider extends FabricModelProvider {
     }
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
-        BlockModelGenerators.BlockFamilyProvider APPLEFAMILY = blockStateModelGenerator.family(ModBlock.APPLEPLANKS);
-        BlockModelGenerators.BlockFamilyProvider PEARFAMILY = blockStateModelGenerator.family(ModBlock.PEARPLANKS);
-        BlockModelGenerators.BlockFamilyProvider LEMONFAMILY = blockStateModelGenerator.family(ModBlock.LEMONPLANKS);
-        BlockModelGenerators.BlockFamilyProvider WALNUTFAMILY = blockStateModelGenerator.family(ModBlock.WALNUTPLANKS);
-        BlockModelGenerators.BlockFamilyProvider BANANAFAMILY = blockStateModelGenerator.family(ModBlock.BANANAPLANKS);
-        BlockModelGenerators.BlockFamilyProvider PEACHFAMILY = blockStateModelGenerator.family(ModBlock.PEACHPLANKS);
-        BlockModelGenerators.BlockFamilyProvider COCONUTFAMILY = blockStateModelGenerator.family(ModBlock.COCONUTPLANKS);
-        BlockModelGenerators.BlockFamilyProvider CARAMBOLAFAMILY = blockStateModelGenerator.family(ModBlock.CARAMBOLAPLANKS);
-        BlockModelGenerators.BlockFamilyProvider TOONFAMILY = blockStateModelGenerator.family(ModBlock.TOONPLANKS);
+        BlockModelGenerators.BlockFamilyProvider APPLEFAMILY = blockStateModelGenerator.family(ModWood.APPLEPLANKS);
+        BlockModelGenerators.BlockFamilyProvider PEARFAMILY = blockStateModelGenerator.family(ModWood.PEARPLANKS);
+        BlockModelGenerators.BlockFamilyProvider LEMONFAMILY = blockStateModelGenerator.family(ModWood.LEMONPLANKS);
+        BlockModelGenerators.BlockFamilyProvider WALNUTFAMILY = blockStateModelGenerator.family(ModWood.WALNUTPLANKS);
+        BlockModelGenerators.BlockFamilyProvider BANANAFAMILY = blockStateModelGenerator.family(ModWood.BANANAPLANKS);
+        BlockModelGenerators.BlockFamilyProvider PEACHFAMILY = blockStateModelGenerator.family(ModWood.PEACHPLANKS);
+        BlockModelGenerators.BlockFamilyProvider COCONUTFAMILY = blockStateModelGenerator.family(ModWood.COCONUTPLANKS);
+        BlockModelGenerators.BlockFamilyProvider CARAMBOLAFAMILY = blockStateModelGenerator.family(ModWood.CARAMBOLAPLANKS);
+        BlockModelGenerators.BlockFamilyProvider TOONFAMILY = blockStateModelGenerator.family(ModWood.TOONPLANKS);
 
-        APPLEFAMILY.stairs(ModBlock.APPLESTAIRS);
-        APPLEFAMILY.slab(ModBlock.APPLESLAB);
-        APPLEFAMILY.button(ModBlock.APPLEBUTTON);
-        APPLEFAMILY.pressurePlate(ModBlock.APPLEPRESSUERPLATE);
-        APPLEFAMILY.fence(ModBlock.APPLEFENCE);
-        APPLEFAMILY.fenceGate(ModBlock.APPLEFENCEGATE);
-        blockStateModelGenerator.createDoor(ModBlock.APPLEDOOR);
-        blockStateModelGenerator.createTrapdoor(ModBlock.APPLETRAPDOOR);
+        APPLEFAMILY.stairs(ModWood.APPLESTAIRS);
+        APPLEFAMILY.slab(ModWood.APPLESLAB);
+        APPLEFAMILY.button(ModWood.APPLEBUTTON);
+        APPLEFAMILY.pressurePlate(ModWood.APPLEPRESSUERPLATE);
+        APPLEFAMILY.fence(ModWood.APPLEFENCE);
+        APPLEFAMILY.fenceGate(ModWood.APPLEFENCEGATE);
+        blockStateModelGenerator.createDoor(ModWood.APPLEDOOR);
+        blockStateModelGenerator.createTrapdoor(ModWood.APPLETRAPDOOR);
 
-        PEARFAMILY.stairs(ModBlock.PEARSTAIRS);
-        PEARFAMILY.slab(ModBlock.PEARSLAB);
-        PEARFAMILY.button(ModBlock.PEARBUTTON);
-        PEARFAMILY.pressurePlate(ModBlock.PEARPRESSUERPLATE);
-        PEARFAMILY.fence(ModBlock.PEARFENCE);
-        PEARFAMILY.fenceGate(ModBlock.PEARFENCEGATE);
-        blockStateModelGenerator.createDoor(ModBlock.PEARDOOR);
-        blockStateModelGenerator.createTrapdoor(ModBlock.PEARTRAPDOOR);
+        PEARFAMILY.stairs(ModWood.PEARSTAIRS);
+        PEARFAMILY.slab(ModWood.PEARSLAB);
+        PEARFAMILY.button(ModWood.PEARBUTTON);
+        PEARFAMILY.pressurePlate(ModWood.PEARPRESSUERPLATE);
+        PEARFAMILY.fence(ModWood.PEARFENCE);
+        PEARFAMILY.fenceGate(ModWood.PEARFENCEGATE);
+        blockStateModelGenerator.createDoor(ModWood.PEARDOOR);
+        blockStateModelGenerator.createTrapdoor(ModWood.PEARTRAPDOOR);
 
-        LEMONFAMILY.stairs(ModBlock.LEMONSTAIRS);
-        LEMONFAMILY.slab(ModBlock.LEMONSLAB);
-        LEMONFAMILY.button(ModBlock.LEMONBUTTON);
-        LEMONFAMILY.pressurePlate(ModBlock.LEMONPRESSUERPLATE);
-        LEMONFAMILY.fence(ModBlock.LEMONFENCE);
-        LEMONFAMILY.fenceGate(ModBlock.LEMONFENCEGATE);
-        blockStateModelGenerator.createDoor(ModBlock.LEMONDOOR);
-        blockStateModelGenerator.createTrapdoor(ModBlock.LEMONTRAPDOOR);
+        LEMONFAMILY.stairs(ModWood.LEMONSTAIRS);
+        LEMONFAMILY.slab(ModWood.LEMONSLAB);
+        LEMONFAMILY.button(ModWood.LEMONBUTTON);
+        LEMONFAMILY.pressurePlate(ModWood.LEMONPRESSUERPLATE);
+        LEMONFAMILY.fence(ModWood.LEMONFENCE);
+        LEMONFAMILY.fenceGate(ModWood.LEMONFENCEGATE);
+        blockStateModelGenerator.createDoor(ModWood.LEMONDOOR);
+        blockStateModelGenerator.createTrapdoor(ModWood.LEMONTRAPDOOR);
 
-        WALNUTFAMILY.stairs(ModBlock.WALNUTSTAIRS);
-        WALNUTFAMILY.slab(ModBlock.WALNUTSLAB);
-        WALNUTFAMILY.button(ModBlock.WALNUTBUTTON);
-        WALNUTFAMILY.pressurePlate(ModBlock.WALNUTPRESSUERPLATE);
-        WALNUTFAMILY.fence(ModBlock.WALNUTFENCE);
-        WALNUTFAMILY.fenceGate(ModBlock.WALNUTFENCEGATE);
-        blockStateModelGenerator.createDoor(ModBlock.WALNUTDOOR);
-        blockStateModelGenerator.createTrapdoor(ModBlock.WALNUTTRAPDOOR);
+        WALNUTFAMILY.stairs(ModWood.WALNUTSTAIRS);
+        WALNUTFAMILY.slab(ModWood.WALNUTSLAB);
+        WALNUTFAMILY.button(ModWood.WALNUTBUTTON);
+        WALNUTFAMILY.pressurePlate(ModWood.WALNUTPRESSUERPLATE);
+        WALNUTFAMILY.fence(ModWood.WALNUTFENCE);
+        WALNUTFAMILY.fenceGate(ModWood.WALNUTFENCEGATE);
+        blockStateModelGenerator.createDoor(ModWood.WALNUTDOOR);
+        blockStateModelGenerator.createTrapdoor(ModWood.WALNUTTRAPDOOR);
 
-        BANANAFAMILY.stairs(ModBlock.BANANASTAIRS);
-        BANANAFAMILY.slab(ModBlock.BANANASLAB);
-        BANANAFAMILY.button(ModBlock.BANANABUTTON);
-        BANANAFAMILY.pressurePlate(ModBlock.BANANAPRESSUERPLATE);
-        BANANAFAMILY.fence(ModBlock.BANANAFENCE);
-        BANANAFAMILY.fenceGate(ModBlock.BANANAFENCEGATE);
-        blockStateModelGenerator.createDoor(ModBlock.BANANADOOR);
-        blockStateModelGenerator.createTrapdoor(ModBlock.BANANATRAPDOOR);
+        BANANAFAMILY.stairs(ModWood.BANANASTAIRS);
+        BANANAFAMILY.slab(ModWood.BANANASLAB);
+        BANANAFAMILY.button(ModWood.BANANABUTTON);
+        BANANAFAMILY.pressurePlate(ModWood.BANANAPRESSUERPLATE);
+        BANANAFAMILY.fence(ModWood.BANANAFENCE);
+        BANANAFAMILY.fenceGate(ModWood.BANANAFENCEGATE);
+        blockStateModelGenerator.createDoor(ModWood.BANANADOOR);
+        blockStateModelGenerator.createTrapdoor(ModWood.BANANATRAPDOOR);
 
-        PEACHFAMILY.stairs(ModBlock.PEACHSTAIRS);
-        PEACHFAMILY.slab(ModBlock.PEACHSLAB);
-        PEACHFAMILY.button(ModBlock.PEACHBUTTON);
-        PEACHFAMILY.pressurePlate(ModBlock.PEACHPRESSUERPLATE);
-        PEACHFAMILY.fence(ModBlock.PEACHFENCE);
-        PEACHFAMILY.fenceGate(ModBlock.PEACHFENCEGATE);
-        blockStateModelGenerator.createDoor(ModBlock.PEACHDOOR);
-        blockStateModelGenerator.createTrapdoor(ModBlock.PEACHTRAPDOOR);
+        PEACHFAMILY.stairs(ModWood.PEACHSTAIRS);
+        PEACHFAMILY.slab(ModWood.PEACHSLAB);
+        PEACHFAMILY.button(ModWood.PEACHBUTTON);
+        PEACHFAMILY.pressurePlate(ModWood.PEACHPRESSUERPLATE);
+        PEACHFAMILY.fence(ModWood.PEACHFENCE);
+        PEACHFAMILY.fenceGate(ModWood.PEACHFENCEGATE);
+        blockStateModelGenerator.createDoor(ModWood.PEACHDOOR);
+        blockStateModelGenerator.createTrapdoor(ModWood.PEACHTRAPDOOR);
 
-        COCONUTFAMILY.stairs(ModBlock.COCONUTSTAIRS);
-        COCONUTFAMILY.slab(ModBlock.COCONUTSLAB);
-        COCONUTFAMILY.button(ModBlock.COCONUTBUTTON);
-        COCONUTFAMILY.pressurePlate(ModBlock.COCONUTPRESSUERPLATE);
-        COCONUTFAMILY.fence(ModBlock.COCONUTFENCE);
-        COCONUTFAMILY.fenceGate(ModBlock.COCONUTFENCEGATE);
-        blockStateModelGenerator.createDoor(ModBlock.COCONUTDOOR);
-        blockStateModelGenerator.createTrapdoor(ModBlock.COCONUTTRAPDOOR);
+        COCONUTFAMILY.stairs(ModWood.COCONUTSTAIRS);
+        COCONUTFAMILY.slab(ModWood.COCONUTSLAB);
+        COCONUTFAMILY.button(ModWood.COCONUTBUTTON);
+        COCONUTFAMILY.pressurePlate(ModWood.COCONUTPRESSUERPLATE);
+        COCONUTFAMILY.fence(ModWood.COCONUTFENCE);
+        COCONUTFAMILY.fenceGate(ModWood.COCONUTFENCEGATE);
+        blockStateModelGenerator.createDoor(ModWood.COCONUTDOOR);
+        blockStateModelGenerator.createTrapdoor(ModWood.COCONUTTRAPDOOR);
 
-        CARAMBOLAFAMILY.stairs(ModBlock.CARAMBOLASTAIRS);
-        CARAMBOLAFAMILY.slab(ModBlock.CARAMBOLASLAB);
-        CARAMBOLAFAMILY.button(ModBlock.CARAMBOLABUTTON);
-        CARAMBOLAFAMILY.pressurePlate(ModBlock.CARAMBOLAPRESSUERPLATE);
-        CARAMBOLAFAMILY.fence(ModBlock.CARAMBOLAFENCE);
-        CARAMBOLAFAMILY.fenceGate(ModBlock.CARAMBOLAFENCEGATE);
-        blockStateModelGenerator.createDoor(ModBlock.CARAMBOLADOOR);
-        blockStateModelGenerator.createTrapdoor(ModBlock.CARAMBOLATRAPDOOR);
+        CARAMBOLAFAMILY.stairs(ModWood.CARAMBOLASTAIRS);
+        CARAMBOLAFAMILY.slab(ModWood.CARAMBOLASLAB);
+        CARAMBOLAFAMILY.button(ModWood.CARAMBOLABUTTON);
+        CARAMBOLAFAMILY.pressurePlate(ModWood.CARAMBOLAPRESSUERPLATE);
+        CARAMBOLAFAMILY.fence(ModWood.CARAMBOLAFENCE);
+        CARAMBOLAFAMILY.fenceGate(ModWood.CARAMBOLAFENCEGATE);
+        blockStateModelGenerator.createDoor(ModWood.CARAMBOLADOOR);
+        blockStateModelGenerator.createTrapdoor(ModWood.CARAMBOLATRAPDOOR);
 
-        TOONFAMILY.stairs(ModBlock.TOONSTAIRS);
-        TOONFAMILY.slab(ModBlock.TOONSLAB);
-        TOONFAMILY.button(ModBlock.TOONBUTTON);
-        TOONFAMILY.pressurePlate(ModBlock.TOONPRESSUERPLATE);
-        TOONFAMILY.fence(ModBlock.TOONFENCE);
-        TOONFAMILY.fenceGate(ModBlock.TOONFENCEGATE);
-        blockStateModelGenerator.createDoor(ModBlock.TOONDOOR);
-        blockStateModelGenerator.createTrapdoor(ModBlock.TOONTRAPDOOR);
-
-
-        blockStateModelGenerator.woodProvider(ModBlock.APPLELOG).log(ModBlock.APPLELOG).wood(ModBlock.APPLEWOOD);
-        blockStateModelGenerator.woodProvider(ModBlock.PEARLOG).log(ModBlock.PEARLOG).wood(ModBlock.PEARWOOD);
-        blockStateModelGenerator.woodProvider(ModBlock.LEMONLOG).log(ModBlock.LEMONLOG).wood(ModBlock.LEMONWOOD);
-        blockStateModelGenerator.woodProvider(ModBlock.WALNUTLOG).log(ModBlock.WALNUTLOG).wood(ModBlock.WALNUTWOOD);
-        blockStateModelGenerator.woodProvider(ModBlock.BANANALOG).log(ModBlock.BANANALOG).wood(ModBlock.BANANAWOOD);
-        blockStateModelGenerator.woodProvider(ModBlock.PEACHLOG).log(ModBlock.PEACHLOG).wood(ModBlock.PEACHWOOD);
-        blockStateModelGenerator.woodProvider(ModBlock.COCONUTLOG).log(ModBlock.COCONUTLOG).wood(ModBlock.COCONUTWOOD);
-        blockStateModelGenerator.woodProvider(ModBlock.CARAMBOLALOG).log(ModBlock.CARAMBOLALOG).wood(ModBlock.CARAMBOLAWOOD);
-        blockStateModelGenerator.woodProvider(ModBlock.TOONLOG).log(ModBlock.TOONLOG).wood(ModBlock.TOONWOOD);
+        TOONFAMILY.stairs(ModWood.TOONSTAIRS);
+        TOONFAMILY.slab(ModWood.TOONSLAB);
+        TOONFAMILY.button(ModWood.TOONBUTTON);
+        TOONFAMILY.pressurePlate(ModWood.TOONPRESSUERPLATE);
+        TOONFAMILY.fence(ModWood.TOONFENCE);
+        TOONFAMILY.fenceGate(ModWood.TOONFENCEGATE);
+        blockStateModelGenerator.createDoor(ModWood.TOONDOOR);
+        blockStateModelGenerator.createTrapdoor(ModWood.TOONTRAPDOOR);
 
 
-        blockStateModelGenerator.createTrivialCube(ModBlock.APPLELEAVES);
-        blockStateModelGenerator.createTrivialCube(ModBlock.PEARLEAVES);
-        blockStateModelGenerator.createTrivialCube(ModBlock.LEMONLEAVES);
-        blockStateModelGenerator.createTrivialCube(ModBlock.WALNUTLEAVES);
-        blockStateModelGenerator.createTrivialCube(ModBlock.BANANALEAVES);
-        blockStateModelGenerator.createTrivialCube(ModBlock.PEACHLEAVES);
-        blockStateModelGenerator.createTrivialCube(ModBlock.COCONUTLEAVES);
-        blockStateModelGenerator.createTrivialCube(ModBlock.CARAMBOLALEAVES);
-        blockStateModelGenerator.createTrivialCube(ModBlock.TOONLEAVES);
+        blockStateModelGenerator.woodProvider(ModWood.APPLELOG).log(ModWood.APPLELOG).wood(ModWood.APPLEWOOD);
+        blockStateModelGenerator.woodProvider(ModWood.PEARLOG).log(ModWood.PEARLOG).wood(ModWood.PEARWOOD);
+        blockStateModelGenerator.woodProvider(ModWood.LEMONLOG).log(ModWood.LEMONLOG).wood(ModWood.LEMONWOOD);
+        blockStateModelGenerator.woodProvider(ModWood.WALNUTLOG).log(ModWood.WALNUTLOG).wood(ModWood.WALNUTWOOD);
+        blockStateModelGenerator.woodProvider(ModWood.BANANALOG).log(ModWood.BANANALOG).wood(ModWood.BANANAWOOD);
+        blockStateModelGenerator.woodProvider(ModWood.PEACHLOG).log(ModWood.PEACHLOG).wood(ModWood.PEACHWOOD);
+        blockStateModelGenerator.woodProvider(ModWood.COCONUTLOG).log(ModWood.COCONUTLOG).wood(ModWood.COCONUTWOOD);
+        blockStateModelGenerator.woodProvider(ModWood.CARAMBOLALOG).log(ModWood.CARAMBOLALOG).wood(ModWood.CARAMBOLAWOOD);
+        blockStateModelGenerator.woodProvider(ModWood.TOONLOG).log(ModWood.TOONLOG).wood(ModWood.TOONWOOD);
+
+
+        blockStateModelGenerator.createTrivialCube(ModWood.APPLELEAVES);
+        blockStateModelGenerator.createTrivialCube(ModWood.PEARLEAVES);
+        blockStateModelGenerator.createTrivialCube(ModWood.LEMONLEAVES);
+        blockStateModelGenerator.createTrivialCube(ModWood.WALNUTLEAVES);
+        blockStateModelGenerator.createTrivialCube(ModWood.BANANALEAVES);
+        blockStateModelGenerator.createTrivialCube(ModWood.PEACHLEAVES);
+        blockStateModelGenerator.createTrivialCube(ModWood.COCONUTLEAVES);
+        blockStateModelGenerator.createTrivialCube(ModWood.CARAMBOLALEAVES);
+        blockStateModelGenerator.createTrivialCube(ModWood.TOONLEAVES);
 
 
         blockStateModelGenerator.createCrossBlockWithDefaultItem(ModTrees.APPLESAPLING,BlockModelGenerators.TintState.NOT_TINTED);

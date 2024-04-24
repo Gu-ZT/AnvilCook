@@ -12,13 +12,15 @@ public class AnvilCook implements ModInitializer {
     @Override
     public void onInitialize() {
         ModTrees.register();
-        ModBlock.register();
+        ModWood.register();
         ModItems.register();
         ModMushroom.register();
         ModCereals.register();
         ModVegetable.register();
         ModFruit.register();
         ModJams.register();
+//        ModSeeds.register();
+        ModCrops.register();
         ModItemGroup.register();
         ModPlayerStatistics.register();
     }

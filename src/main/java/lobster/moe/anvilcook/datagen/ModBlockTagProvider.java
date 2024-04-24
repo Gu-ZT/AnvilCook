@@ -1,6 +1,6 @@
 package lobster.moe.anvilcook.datagen;
 
-import lobster.moe.anvilcook.init.ModBlock;
+import lobster.moe.anvilcook.init.ModWood;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
@@ -15,43 +15,43 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void addTags(HolderLookup.Provider arg) {
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
-                .add(ModBlock.APPLELOG)
-                .add(ModBlock.APPLEWOOD)
-                .add(ModBlock.PEARLOG)
-                .add(ModBlock.PEARWOOD)
-                .add(ModBlock.LEMONLOG)
-                .add(ModBlock.LEMONWOOD)
-                .add(ModBlock.WALNUTLOG)
-                .add(ModBlock.WALNUTWOOD)
-                .add(ModBlock.BANANALOG)
-                .add(ModBlock.BANANAWOOD)
-                .add(ModBlock.PEACHLOG)
-                .add(ModBlock.PEACHWOOD)
-                .add(ModBlock.COCONUTLOG)
-                .add(ModBlock.COCONUTWOOD)
-                .add(ModBlock.CARAMBOLALOG)
-                .add(ModBlock.CARAMBOLAWOOD)
-                .add(ModBlock.TOONLOG)
-                .add(ModBlock.TOONWOOD);
+                .add(ModWood.APPLELOG)
+                .add(ModWood.APPLEWOOD)
+                .add(ModWood.PEARLOG)
+                .add(ModWood.PEARWOOD)
+                .add(ModWood.LEMONLOG)
+                .add(ModWood.LEMONWOOD)
+                .add(ModWood.WALNUTLOG)
+                .add(ModWood.WALNUTWOOD)
+                .add(ModWood.BANANALOG)
+                .add(ModWood.BANANAWOOD)
+                .add(ModWood.PEACHLOG)
+                .add(ModWood.PEACHWOOD)
+                .add(ModWood.COCONUTLOG)
+                .add(ModWood.COCONUTWOOD)
+                .add(ModWood.CARAMBOLALOG)
+                .add(ModWood.CARAMBOLAWOOD)
+                .add(ModWood.TOONLOG)
+                .add(ModWood.TOONWOOD);
         getOrCreateTagBuilder(BlockTags.FENCES)
-                .add(ModBlock.APPLEFENCE)
-                .add(ModBlock.PEARFENCE)
-                .add(ModBlock.LEMONFENCE)
-                .add(ModBlock.WALNUTFENCE)
-                .add(ModBlock.BANANAFENCE)
-                .add(ModBlock.PEACHFENCE)
-                .add(ModBlock.COCONUTFENCE)
-                .add(ModBlock.CARAMBOLAFENCE)
-                .add(ModBlock.TOONFENCE);
+                .add(ModWood.APPLEFENCE)
+                .add(ModWood.PEARFENCE)
+                .add(ModWood.LEMONFENCE)
+                .add(ModWood.WALNUTFENCE)
+                .add(ModWood.BANANAFENCE)
+                .add(ModWood.PEACHFENCE)
+                .add(ModWood.COCONUTFENCE)
+                .add(ModWood.CARAMBOLAFENCE)
+                .add(ModWood.TOONFENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-                .add(ModBlock.APPLEFENCEGATE)
-                .add(ModBlock.PEARFENCEGATE)
-                .add(ModBlock.LEMONFENCEGATE)
-                .add(ModBlock.WALNUTFENCEGATE)
-                .add(ModBlock.BANANAFENCEGATE)
-                .add(ModBlock.PEACHFENCEGATE)
-                .add(ModBlock.COCONUTFENCEGATE)
-                .add(ModBlock.CARAMBOLAFENCEGATE)
-                .add(ModBlock.TOONFENCEGATE);
+                .add(ModWood.APPLEFENCEGATE)
+                .add(ModWood.PEARFENCEGATE)
+                .add(ModWood.LEMONFENCEGATE)
+                .add(ModWood.WALNUTFENCEGATE)
+                .add(ModWood.BANANAFENCEGATE)
+                .add(ModWood.PEACHFENCEGATE)
+                .add(ModWood.COCONUTFENCEGATE)
+                .add(ModWood.CARAMBOLAFENCEGATE)
+                .add(ModWood.TOONFENCEGATE);
     }
 }

@@ -1,7 +1,7 @@
 package lobster.moe.anvilcook.events.effects;
 
 import lobster.moe.anvilcook.events.FoodTagCounter;
-import lobster.moe.anvilcook.tag.ModFoodTags;
+import lobster.moe.anvilcook.events.tag.ModFoodTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;

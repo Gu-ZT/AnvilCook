@@ -4,6 +4,9 @@ import lobster.moe.anvilcook.AnvilCook;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
@@ -22,10 +25,9 @@ public class ModFruit {
     public final static Item PEACH = registerItem("peach",Item::new,defaultProperties().food(lobster.moe.anvilcook.item.ModFruit.PEACH));
     public final static Item COCONUT = registerItem("coconut",Item::new,defaultProperties().food(lobster.moe.anvilcook.item.ModFruit.COCONUT));
     public final static Item CARAMBOLA = registerItem("carambola",Item::new,defaultProperties().food(lobster.moe.anvilcook.item.ModFruit.CARAMBOLA));
-    public final static Item STRAWBERRY = registerItem("strawberry",Item::new,defaultProperties().food(lobster.moe.anvilcook.item.ModFruit.STRAWBERRY));
-    public final static Item BLUEBERRY = registerItem("blueberry",Item::new,defaultProperties().food(lobster.moe.anvilcook.item.ModFruit.BLUEBERRY));
+    public final static Item STRAWBERRY = registerItem("strawberry",(properties)->new ItemNameBlockItem(ModCrops.STRAWBERYCROP, new Item.Properties().food(lobster.moe.anvilcook.item.ModFruit.STRAWBERRY)),defaultProperties().food(lobster.moe.anvilcook.item.ModFruit.STRAWBERRY));
+    public final static Item BLUEBERRY = registerItem("blueberry",(properties)->new ItemNameBlockItem(ModCrops.BLUEBERYCROP, new Item.Properties().food(lobster.moe.anvilcook.item.ModFruit.BLUEBERRY)),defaultProperties().food(lobster.moe.anvilcook.item.ModFruit.BLUEBERRY));
     public final static Item TOON = registerItem("toon",Item::new,defaultProperties().food(lobster.moe.anvilcook.item.ModFruit.TOON));
-
 
 
 

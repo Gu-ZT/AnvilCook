@@ -1,7 +1,7 @@
 package lobster.moe.anvilcook.features;
 
 import lobster.moe.anvilcook.AnvilCook;
-import lobster.moe.anvilcook.init.ModBlock;
+import lobster.moe.anvilcook.init.ModWood;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
@@ -37,31 +37,31 @@ public class ModTreeFeatures{
                 new TwoLayersFeatureSize(1, 0, 1));
     }
     private static TreeConfiguration.TreeConfigurationBuilder createApple(){
-        return createStraightBlobTree(ModBlock.APPLELOG,ModBlock.APPLELEAVES,5,3,0,2).ignoreVines();
+        return createStraightBlobTree(ModWood.APPLELOG, ModWood.APPLELEAVES,5,3,0,2).ignoreVines();
     }
     private static TreeConfiguration.TreeConfigurationBuilder createPear() {
-        return createStraightBlobTree(ModBlock.PEARLOG, ModBlock.PEARLEAVES, 5, 3, 0, 3).ignoreVines();
+        return createStraightBlobTree(ModWood.PEARLOG, ModWood.PEARLEAVES, 5, 3, 0, 3).ignoreVines();
     }
     private static TreeConfiguration.TreeConfigurationBuilder createLemon() {
-        return createStraightBlobTree(ModBlock.LEMONLOG, ModBlock.LEMONLEAVES, 5, 2, 0, 3).ignoreVines();
+        return createStraightBlobTree(ModWood.LEMONLOG, ModWood.LEMONLEAVES, 5, 2, 0, 3).ignoreVines();
     }
     private static TreeConfiguration.TreeConfigurationBuilder createWalnut() {
-        return createStraightBlobTree(ModBlock.WALNUTLOG, ModBlock.WALNUTLEAVES, 6, 3, 0, 3).ignoreVines();
+        return createStraightBlobTree(ModWood.WALNUTLOG, ModWood.WALNUTLEAVES, 6, 3, 0, 3).ignoreVines();
     }
     private static TreeConfiguration.TreeConfigurationBuilder createBanana() {
-        return createStraightBlobTree(ModBlock.BANANALOG, ModBlock.BANANALEAVES, 7, 4, 0, 4).ignoreVines();
+        return createStraightBlobTree(ModWood.BANANALOG, ModWood.BANANALEAVES, 7, 4, 0, 4).ignoreVines();
     }
     private static TreeConfiguration.TreeConfigurationBuilder createPeach() {
-        return createStraightBlobTree(ModBlock.PEACHLOG, ModBlock.PEACHLEAVES, 5, 2, 0, 2).ignoreVines();
+        return createStraightBlobTree(ModWood.PEACHLOG, ModWood.PEACHLEAVES, 5, 2, 0, 2).ignoreVines();
     }
     private static TreeConfiguration.TreeConfigurationBuilder createCoconut() {
-        return createStraightBlobTree(ModBlock.COCONUTLOG, ModBlock.COCONUTLEAVES, 7, 2, 0, 3).ignoreVines();
+        return createStraightBlobTree(ModWood.COCONUTLOG, ModWood.COCONUTLEAVES, 7, 2, 0, 3).ignoreVines();
     }
     private static TreeConfiguration.TreeConfigurationBuilder createCarambola() {
-        return createStraightBlobTree(ModBlock.CARAMBOLALOG, ModBlock.CARAMBOLALEAVES, 6, 2, 0, 3).ignoreVines();
+        return createStraightBlobTree(ModWood.CARAMBOLALOG, ModWood.CARAMBOLALEAVES, 6, 2, 0, 3).ignoreVines();
     }
     private static TreeConfiguration.TreeConfigurationBuilder createToon() {
-        return createStraightBlobTree(ModBlock.TOONLOG, ModBlock.TOONLEAVES, 7, 2, 0, 2).ignoreVines();
+        return createStraightBlobTree(ModWood.TOONLOG, ModWood.TOONLEAVES, 7, 2, 0, 2).ignoreVines();
     }
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> bootstapContext){
         register(bootstapContext,APPLETREE,Feature.TREE,createApple().build());
