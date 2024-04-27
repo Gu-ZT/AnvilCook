@@ -10,19 +10,18 @@ import net.minecraft.world.level.Level;
 public interface FoodType {
   int judgeNum = 128;
   ResourceLocation getCunterResourceLocation();
-  ResourceLocation getjudgeResourceLocation();
-  void effect(ItemStack itemStack, ServerPlayer serverPlayer, Level level);
-  default void addCounter(ServerPlayer serverPlayer) {
+  ResourceLocation getJudgeResourceLocation();
+  void effect(ItemStack itemStack,Level level, ServerPlayer serverPlayer);
+  default void addCounter(ItemStack itemStack,Level level, ServerPlayer serverPlayer){
       serverPlayer.awardStat(getCunterResourceLocation(),1);
-      int sweetCounter = serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation());
-      if (sweetCounter>=judgeNum && serverPlayer.getStats().getValue(Stats.CUSTOM,getjudgeResourceLocation())==0){
+      int counter = serverPlayer.getStats().getValue(Stats.CUSTOM,getCunterResourceLocation());
+      if (counter>=judgeNum && serverPlayer.getStats().getValue(Stats.CUSTOM,getJudgeResourceLocation())==0){
         Random RANDOM = new Random();
         if (RANDOM.nextDouble()>=0.5){
-          serverPlayer.awardStat(getjudgeResourceLocation(),1);
+          serverPlayer.awardStat(getJudgeResourceLocation(),1);
         }else {
-          serverPlayer.awardStat(getjudgeResourceLocation(),2);
+          serverPlayer.awardStat(getJudgeResourceLocation(),2);
         }
       }
     }
-
 }
